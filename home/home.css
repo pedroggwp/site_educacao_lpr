@@ -42,5 +42,40 @@ header ul li a {
 }
 
 .menu li.active a {
-    color: red;
+    color: #3972A2;
+}
+
+main {
+    text-align: center;
+}
+
+main div { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#img_home {
+    height: 100px;
+}
+
+main p {
+    width: 885px;
+    color: white;
+    font-size: 40px;
+    font-family: "Jaldi", sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+main button {
+    width: 200px;
+    height: 60px;
+    background-color: #3972A2;
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
 }
