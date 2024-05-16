@@ -1,0 +1,107 @@
+/* @import url("https://fonts.cdnfonts.com/css/museo-sans-rounded"); */
+@import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+
+    background-color: #342E37;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 5px solid #3972A2;
+    
+    padding: 20px;
+    margin: 0px 20px 0px 20px;
+}
+
+header img {
+    width: 120px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    padding: 5px;
+    margin-left: 20px;
+    
+}
+
+header ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Jaldi", sans-serif;
+    color: white;
+}
+
+.menu li.active a {
+    color: red;
+}
+
+h2, h3 {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    color: #3972A2;
+}
+
+main {
+    display: grid;
+    align-items: center;
+}
+
+p {
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+#diagrama {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+article {
+    border-radius: 5px;
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+}
+
+#posicaoBlocos {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    user-select: none;
+}
+
+#blocosDisponiveis {
+    display: flex;
+}
+
+.bloco {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.posicaoBloco {
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 80px;
+    height: 80px;
+}
