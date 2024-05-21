@@ -41,7 +41,7 @@ header ul li a {
 }
 
 .menu li.active a {
-    color: red;
+    color: #3972A2;
 }
 
 h2, h3 {
@@ -61,7 +61,6 @@ p {
 }
 
 #diagrama {
-    border: 2px solid black;
     border-radius: 5px;
     padding: 1rem;
 }
