@@ -86,9 +86,9 @@ for (let i = 0; i < posicoes.length; i++) {
         const blocoPosicao = bloco.getAttribute("data-posicao");
 
         if (posicaoId === blocoPosicao) {
-            // pegar o bloco que está sendo selecionado e colocar no lugar da posicao do bloco
-            document.getElementById("blocosDisponiveis").appendChild(bloco);
+            e.target.appendChild(bloco);
         } else {
+            alert("Bloco na posição incorreta! Tente novamente.");
             document.getElementById("blocosDisponiveis").appendChild(blocoAtual);
         }
     };
