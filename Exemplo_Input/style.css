@@ -1,0 +1,64 @@
+*{
+    background-color: #342E37;
+    font-family: "Jaldi", sans-serif;
+    padding: 0;
+    color: white;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+#input{
+    background-color: #1E1E1E;
+    font-family: "Inconsolata", monospace;
+    padding: 10px;
+    height: 250px;
+    width: 700px;
+    margin-top: 20px;
+    margin-left: 140px;
+    outline: 0;
+    border: 0 none;
+    border-left: #3972A2 15px solid;
+    border-radius: 5px;
+    resize: none;
+}
+
+#submit{
+    background-color: #4AA13C;
+    padding: 1px 20px;
+    border-radius: 3px;
+    border: 0px;
+    margin: 0;
+    float: right;
+}
+#titulo-conteudo{
+    font-weight: normal;
+}
+#voltar{
+    background-color: #FFD342;
+    position: relative;
+    top: 80px;
+    border: 0px;
+    padding: 1px 20px;
+    border-radius: 3px;
+    float: right;
+}
+#avancar{
+    position: relative;
+    top: 80px;
+    background-color: #3972A2;
+    border: 0px;
+    padding: 1px 20px;
+    border-radius: 3px;
+    float: right;
+    margin-left: 20px;
+    
+}
+.botoes{
+    display: flex;
+    justify-content: end;
+    width: 100%;  
+}
+
