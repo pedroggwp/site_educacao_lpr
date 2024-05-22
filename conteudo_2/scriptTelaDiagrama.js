@@ -1,61 +1,3 @@
-// // criando a variavel para pegar o bloco
-// const blocos = document.getElementsByClassName("bloco");
-
-// // criando o for para adicionar evento onDrag aos blocos
-// for (let i = 0; i < blocos.length; i++) {
-//     blocos[i].draggable = true;
-// }
-
-// // foreach para o ondrag
-// // on drag, quando está segurando
-// Array.from(blocos).forEach((bloco) => {
-//     bloco.ondrag = () => {
-//     };
-// })
-
-// // foreach para o ondragstart 
-// // on drag start, quando comecar a segurar
-// Array.from(blocos).forEach((bloco) => {
-//     bloco.ondragstart = () => {
-//     };
-// })
-
-// // foreach para o ondragend 
-// // on drag end, quando parar de segurar
-// Array.from(blocos).forEach((bloco) => {
-//     bloco.ondragend = () => {
-//     };
-// })
-
-// // foreach para o ondragenter 
-// // on drag enter, quando entrar
-// Array.from(blocos).forEach((bloco) => {
-//     bloco.ondragenter = () => {
-//     };
-// })
-
-// // foreach para o ondragleave 
-// // on drag leave, quando sair
-// Array.from(blocos).forEach((bloco) => {
-//     bloco.ondragleave = () => {
-//     };
-// })
-
-// // foreach para o ondragover 
-// // on drag over, quando estiver sobre o bloco
-// Array.from(blocos).forEach((bloco) => {
-//     bloco.ondragover = () => {
-//     };
-// })
-
-// // foreach para o ondrop
-// // on drop, quando soltar
-// Array.from(blocos).forEach((bloco) => {
-//     bloco.ondrop = () => {
-//     };
-// })
-
-
 // Criando a variável para pegar o bloco
 const blocos = document.getElementsByClassName("bloco");
 const posicoes = document.getElementsByClassName("posicaoBloco");
@@ -86,9 +28,9 @@ for (let i = 0; i < posicoes.length; i++) {
         const blocoPosicao = bloco.getAttribute("data-posicao");
 
         if (posicaoId === blocoPosicao) {
-            // pegar o bloco que está sendo selecionado e colocar no lugar da posicao do bloco
-            document.getElementById("blocosDisponiveis").appendChild(bloco);
+            e.target.appendChild(bloco);
         } else {
+            alert("Bloco na posição incorreta! Tente novamente.");
             document.getElementById("blocosDisponiveis").appendChild(blocoAtual);
         }
     };
