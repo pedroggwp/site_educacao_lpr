@@ -1,11 +1,8 @@
-// Criando a variável para pegar o bloco
 const blocos = document.getElementsByClassName("bloco");
 const posicoes = document.getElementsByClassName("posicaoBloco");
 
-// Variável para armazenar o id do bloco sendo arrastado
 let blocoAtual = null;
 
-// Adicionando evento onDrag aos blocos
 for (let i = 0; i < blocos.length; i++) {
     blocos[i].draggable = true;
     blocos[i].ondragstart = (e) => {
@@ -14,7 +11,6 @@ for (let i = 0; i < blocos.length; i++) {
     };
 }
 
-// Adicionando eventos onDragOver e onDrop às posições dos blocos
 for (let i = 0; i < posicoes.length; i++) {
     posicoes[i].ondragover = (e) => {
         e.preventDefault();
@@ -29,9 +25,14 @@ for (let i = 0; i < posicoes.length; i++) {
 
         if (posicaoId === blocoPosicao) {
             e.target.appendChild(bloco);
+            bloco.style.paddingLeft = "40px";
+            bloco.style.paddingRight = "40px";
         } else {
-            alert("Bloco na posição incorreta! Tente novamente.");
-            document.getElementById("blocosDisponiveis").appendChild(blocoAtual);
+            window.alert("Bloco na posição incorreta! Tente novamente");
+            if (bloco.parentElement) {
+                bloco.parentElement.removeChild(bloco);
+            }
+            document.getElementById("blocosDisponiveis").appendChild(bloco);
         }
     };
 }
