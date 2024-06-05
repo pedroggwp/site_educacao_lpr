@@ -7,6 +7,7 @@
 
 main {
     padding: 20px;
+    margin: 20px;
 }
 
 .titulo-conteudo{
@@ -39,35 +40,6 @@ code{
     border-radius: 5px;
     width: 96%;
 }
-
-#voltar{
-    background-color: #FFD342;
-    position: relative;
-    top: 80px;
-    border: 0px;
-    padding: 1px 20px;
-    border-radius: 3px;
-    float: right;
-}
-
-#avancar{
-    position: relative;
-    top: 80px;
-    background-color: #3972A2;
-    border: 0px;
-    padding: 1px 20px;
-    border-radius: 3px;
-    float: right;
-    margin-left: 20px;
-    
-}
-
-.botoes{
-    display: flex;
-    justify-content: end;
-    width: 100%;  
-}
-
 .desafio{
     display: flex;
     justify-content: center;
@@ -105,5 +77,53 @@ code{
 }
 .invisivel{
     display: none;
+}
+
+.botoes {
+    padding: 20px;
+    display: flex;
+    justify-content: end;
+    font-family: "Jaldi", sans-serif;
+    margin-top: 10px;
+}
+  
+.btn {
+    cursor: pointer;
+    border-radius: 8px;
+    color: #ffffff;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+}
+
+.avancar, .fechar{
+    background-color: #ffd342;
+}
+
+.cancelar a {
+    background-color: #3972a200;
+    text-decoration: none;
+    color: white;
+}
+
+.avancar a {
+    background-color: #ffd34200;
+    text-decoration: none;
+    color: white;
+}
+
+.avancar:hover, .fechar:hover{
+    background-color: #f1c73c;
+}
+
+.cancelar {
+    background-color: #3972a2;
+}
+
+.cancelar:hover {
+    background-color: #30628b;
 }
   
