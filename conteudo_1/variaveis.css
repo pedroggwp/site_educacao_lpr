@@ -22,8 +22,10 @@ main {
 .descricao-conteudo{
     line-height: 25px;
     margin-bottom: 15px;
+    width: 96%;
 }
 code{
+    width: 96%;
     margin-top: 15px;
     margin-bottom: 15px;
     background-color: #1E1E1E;
@@ -31,6 +33,7 @@ code{
     border-left: 10px solid #3972A2;
     display: block;
     border-radius: 5px;
+    width: 96%;
 }
 #voltar{
     background-color: #FFD342;
@@ -75,6 +78,23 @@ code{
     font-size: 18px;
     cursor: pointer;
 }
-
-
+.input{
+    width: 96%;
+    font-size: 15px;
+    border: 0 none; 
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #1E1E1E;
+    padding: 25px 15px;
+    border-left: 10px solid #3972A2;
+    display: block;
+    border-radius: 5px;
+    resize: none;
+}
+.erro{
+    color: red;
+}
+.invisivel{
+    display: none;
+}
   
