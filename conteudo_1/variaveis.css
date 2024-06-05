@@ -8,22 +8,26 @@
 main {
     padding: 20px;
 }
+
 .titulo-conteudo{
     color: #3972A2;
     margin-bottom: 15px;
     font-weight: bold;
 }
+
 .subtitulo-conteudo{
     color: #3972A2;
     font-weight: bold;
     margin-bottom: 15px;
     margin-top: 15px;
 }
+
 .descricao-conteudo{
     line-height: 25px;
     margin-bottom: 15px;
     width: 96%;
 }
+
 code{
     width: 96%;
     margin-top: 15px;
@@ -35,6 +39,7 @@ code{
     border-radius: 5px;
     width: 96%;
 }
+
 #voltar{
     background-color: #FFD342;
     position: relative;
@@ -44,6 +49,7 @@ code{
     border-radius: 3px;
     float: right;
 }
+
 #avancar{
     position: relative;
     top: 80px;
@@ -55,15 +61,18 @@ code{
     margin-left: 20px;
     
 }
+
 .botoes{
     display: flex;
     justify-content: end;
     width: 100%;  
 }
+
 .desafio{
     display: flex;
     justify-content: center;
 }
+
 .desafio p{
     display: flex;
     align-items: center;

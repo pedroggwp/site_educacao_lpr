@@ -1,4 +1,4 @@
-*{
+* {
     background-color: #342E37;
     font-family: "Jaldi", sans-serif;
     padding: 0;
@@ -24,7 +24,7 @@ main {
     resize: none;
 }
 
-#submit{
+#submit {
     background-color: #4AA13C;
     padding: 1px 20px;
     border-radius: 3px;
@@ -32,7 +32,8 @@ main {
     margin: 0;
     float: right;
 }
-#titulo-conteudo{
+
+#titulo-conteudo {
     font-weight: normal;
 }
 #voltar{
@@ -55,11 +56,10 @@ main {
     border-radius: 3px;
     float: right;
     margin-left: 20px;
-    
 }
-.botoes{
+
+.botoes {
     display: flex;
     justify-content: end;
     width: 100%;  
 }
-
