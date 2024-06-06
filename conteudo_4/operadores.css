@@ -58,6 +58,19 @@
     justify-content: center;
 }
 
+.invisible {
+    display: none;
+}
+
+#saiba_mais p {
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #3972A2;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
 .avancar, .fechar{
     background-color: #ffd342;
 }
