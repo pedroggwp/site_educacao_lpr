@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores de Atribuição em Python</title>
+    
+    <link rel="stylesheet" href="../home/style/header.css">
+    <link rel="stylesheet" href="operadores.css">
+
+    <script src="../home/home.js" defer></script>
+    <script src="operadores.js" defer></script>
+</head>
+<body>
+
+    <header class="menu">
+        <img src="../home/img/logo.svg" alt="Logo do site Laboratório Python">
+
+        <ul>
+            <li><a href="../home/home.html">Home</a></li>
+            <li><a href="../conteudo_1/variaveis.html">Variáveis</a></li>
+            <li><a href="../conteudo_2/diagrama.html">Diagrama de blocos</a></li>
+            <li><a href="../conteudo_3/input.html">Input</a></li>
+            <li><a href="./operadores_aritmeticos.html">Operadores</a></li>
+            <li><a href="">Conteudo 5</a></li>
+            <li><a href="">Conteudo</a></li>
+        </ul>
+
+    </header>
+
+    <main>
+        <div class="card_box">
+
+            <div class="card_item">
+                <h1>Operadores de Atribuição</h1>
+                <p>Os operadores de atribuição são usados para atribuir valores a variáveis. O operador de atribuição básico é o =, mas existem vários operadores de atribuição compostos que realizam uma operação e, em seguida, atribuem o resultado à variável.</p>
+            </div>
+
+            <div class="card_item">
+                <h2>Operador +=</h2>
+                <p>Adiciona o valor do lado direito ao valor da variável do lado esquerdo e atribui o resultado à variável do lado esquerdo.</p>
+                <div class="code_example">
+                    <code>i = 7</code>
+                    <code>i += 1</code>
+                    <code>print(i) # Output: 8</code>
+                </div>
+            </div>
+
+            <div class="card_item">
+                <h2>Operador -=</h2>
+                <p>Subtrai o valor do lado direito do valor da variável do lado esquerdo e atribui o resultado à variável do lado esquerdo.</p>
+                <div class="code_example">
+                    <code>i = 7</code>
+                    <code>i -= 1</code>
+                    <code>print(i) # Output: 6</code>
+                </div>
+            </div>
+
+            <div class="card_item">
+                <h2>Operador *=</h2>
+                <p>Multiplica o valor do lado direito pelo valor da variável do lado esquerdo e atribui o resultado à variável do lado esquerdo.</p>
+                <div class="code_example">
+                    <code>i = 7</code>
+                    <code>i *= 2</code>
+                    <code>print(i) # Output: 14</code>
+                </div>
+            </div>
+
+            <div class="card_item">
+                <h2>Operador /=</h2>
+                <p>Divide o valor da variável do lado esquerdo pelo valor do lado direito e atribui o resultado à variável do lado esquerdo.</p>
+                <div class="code_example">
+                    <code>i = 7</code>
+                    <code>i /= 2</code>
+                    <code>print(i) # Output: 3.5</code>
+                </div>
+            </div>
+
+            <div id="saiba_mais">
+                <p>Quer saber mais operadores de atribuição? Clique aqui!</p>
+            </div>
+
+            <div class="others_operators invisible">
+                <div class="card_item">
+                    <h2>Operador %=</h2>
+                    <p>Calcula o resto da divisão do valor da variável do lado esquerdo pelo valor do lado direito e atribui o resultado à variável do lado esquerdo.</p>
+                    <div class="code_example">
+                        <code>i = 7</code>
+                        <code>i %= 2</code>
+                        <code>print(i) # Output: 1</code>
+                    </div>
+                </div>
+
+                <div class="card_item">
+                    <h2>Operador //=</h2>
+                    <p>Realiza a divisão inteira do valor da variável do lado esquerdo pelo valor do lado direito e atribui o resultado à variável do lado esquerdo.</p>
+                    <div class="code_example">
+                        <code>i = 7</code>
+                        <code>i //= 2</code>
+                        <code>print(i) # Output: 3</code>
+                    </div>
+                </div>
+
+                <div class="card_item">
+                    <h2>Operador **=</h2>
+                    <p>Eleva a variável do lado esquerdo à potência do valor do lado direito e atribui o resultado à variável do lado esquerdo.</p>
+                    <div class="code_example">
+                        <code>i = 7</code>
+                        <code>i **= 2</code>
+                        <code>print(i) # Output: 49</code>
+                    </div>
+                </div>
+
+                <div class="card_item">
+                    <h2>Operador &=</h2>
+                    <p>Realiza a operação bit a bit E entre o valor da variável do lado esquerdo e o valor do lado direito e atribui o resultado à variável do lado esquerdo.</p>
+                    <div class="code_example">
+                        <code>x = 5  # 5 em binário é 101</code>
+                        <code>x &= 3  # 3 em binário é 011, então 101 & 011 é 001</code>
+                        <code>print(x) # Output: 1</code>
+                    </div>
+                </div>
+
+                <div class="card_item">
+                    <h2>Operador |=</h2>
+                    <p>Realiza a operação bit a bit OU entre o valor da variável do lado esquerdo e o valor do lado direito e atribui o resultado à variável do lado esquerdo.</p>
+                    <div class="code_example">
+                        <code>x = 5  # 5 em binário é 101</code>
+                        <code>x |= 3  # 3 em binário é 011, então 101 | 011 é 111</code>
+                        <code>print(x) # Output: 7</code>
+                    </div>
+                </div>
+
+                <div class="card_item">
+                    <h2>Operador ^=</h2>
+                    <p>Realiza a operação bit a bit OU Exclusivo (XOR) entre o valor da variável do lado esquerdo e o valor do lado direito e atribui o resultado à variável do lado esquerdo.</p>
+                    <div class="code_example">
+                        <code>x = 5 # 5 em binário é 101</code>
+                        <code>x ^= 3 # 3 em binário é 011, então 101 ^ 011 é 110</code>
+                        <code>print(x) # Output: x ^= 3</code>
+                    </div>
+                </div>
+
+                <div class="card_item">
+                    <h2>Operador >>=</h2>
+                    <p>Realiza a operação de deslocamento de bits à direita no valor da variável do lado esquerdo pelo número de bits especificado pelo valor do lado direito e atribui o resultado à variável do lado esquerdo.</p>
+                    <div class="code_example">
+                        <code>x = 8  # 8 em binário é 1000</code>
+                        <code>x >>= 2  # Desloca dois bits para a direita: 1000 >> 2 é 0010</code>
+                        <code>print(x) # Output: 2</code>
+                    </div>
+                </div>
+
+                <div class="card_item">
+                    <h2>Operador <<=</h2>
+                    <p>Realiza a operação de deslocamento de bits à esquerda no valor da variável do lado esquerdo pelo número de bits especificado pelo valor do lado direito e atribui o resultado à variável do lado esquerdo.</p>
+                    <div class="code_example">
+                        <code>x = 2  # 2 em binário é 0010</code>
+                        <code>x <<= 2  # Desloca dois bits para a esquerda: 0010 << 2 é 1000</code>
+                        <code>print(x) # Output: 8</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="botoes">
+            <a href="../conteudo_4/operadores_aritmeticos.html"><div class="btn cancelar">Voltar</div></a>
+            <a href="../conteudo_4/operadores_comparacao.html"><div class="btn avancar">Avançar</div></a>
+          </div>
+    </main>
+</body>
+</html>

@@ -1,4 +1,4 @@
-*{
+* {
     background-color: #342E37;
     font-family: "Jaldi", sans-serif;
     padding: 0;
@@ -9,7 +9,6 @@ main {
     display: flex;
     padding: 20px;
 }
-
 #input{
     background-color: #1E1E1E;
     font-family: "Inconsolata", monospace;
@@ -25,7 +24,7 @@ main {
     resize: none;
 }
 
-#submit{
+#submit {
     background-color: #4AA13C;
     padding: 1px 20px;
     border-radius: 3px;
@@ -33,10 +32,12 @@ main {
     margin: 0;
     float: right;
 }
-#titulo-conteudo{
+
+#titulo-conteudo {
     font-weight: normal;
 }
 #voltar{
+    text-decoration: none;
     background-color: #FFD342;
     position: relative;
     top: 80px;
@@ -46,6 +47,7 @@ main {
     float: right;
 }
 #avancar{
+    text-decoration: none;
     position: relative;
     top: 80px;
     background-color: #3972A2;
@@ -54,11 +56,10 @@ main {
     border-radius: 3px;
     float: right;
     margin-left: 20px;
-    
 }
-.botoes{
+
+.botoes {
     display: flex;
     justify-content: end;
     width: 100%;  
 }
-
