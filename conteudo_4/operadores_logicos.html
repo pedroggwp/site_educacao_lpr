@@ -35,24 +35,118 @@
                 <p>Operadores lógicos são usados para combinar expressões booleanas e retornar um valor booleano. Para compreender os operadores lógicos em Python, é fundamental entender como funcionam as estruturas condicionais, pois os operadores lógicos são frequentemente usados para combinar múltiplas condições em instruções if, elif e while. Eles nos permitem criar expressões complexas que nos ajudam a controlar o fluxo do programa de acordo com diferentes cenários.</p>
             </div>
 
-            
-
-            <!-- <div class="card_item">
+            <div class="card_item">
                 <h1>Operador and</h1>
                 <p>Retorna True se ambas as expressões forem verdadeiras</p>
                 <div class="code_example">
                     <code>a = True</code>
                     <code>b = False</code>
-                    <code>resultado = a and b</code>
-                    <code>print(resultado) # Output: False</code>
+                    <code>print(a and b)  # Output: False</code>
+                    <br>
+                    
+                    <code>a = 5</code>
+                    <code>b = 10</code>
+                    <code>print(a &lt; 10 and b &gt; 5)  # Output: True</code>
                 </div>
-            </div> -->
+            </div>
+
+            <div class="card_item">
+                <h1>Operador or</h1>
+                <p>O operador or retorna True se pelo menos uma das expressões for verdadeira. Caso ambas sejam falsas, retorna False.</p>
+                <div class="code_example">
+                    <code>a = True</code>
+                    <code>b = False</code>
+                    <code>print(a or b)  # Output: True</code>
+                    <br>
+                    
+                    <code>a = 5</code>
+                    <code>b = 10</code>
+                    <code>print(a &lt; 10 or b &gt; 5)  # Output: True</code>
+                </div>
+            </div>
+    
+            <div class="card_item">
+                <h1>Operador not</h1>
+                <p>O operador not inverte o valor lógico de uma expressão. Se a expressão for True, retorna False, e vice-versa.</p>
+                <div class="code_example">
+                    <code>a = True</code>
+                    <code>print(not a)  # Output: False</code>
+                    <br>
+                    
+                    <code>a = 5</code>
+                    <code>print(not a &lt; 10)  # Output: False</code>
+                </div>
+            </div>
+
+            
+            <div id="saiba_mais">
+                <p>Para ver mais exemplos, clique aqui!</p>
+            </div>
+
+            <div class="others_operators invisible">
+
+
+
+                <div class="card_item">
+                    <h1>Exemplos em Condicionais</h1>
+                    <p>Os operadores lógicos são frequentemente usados em condicionais para combinar múltiplas condições.</p>
+                </div>
+
+                <div class="card_item">
+                    <h2>Exemplo com if e and</h2>
+                    <div class="code_example">
+                        <pre><code>a = 5
+b = 10
+if a < 10 and b > 5:
+    print("Ambas as condições são verdadeiras.")
+# Output: Ambas as condições são verdadeiras.
+
+                        </code></pre>
+                    </div>
+                </div>
+                
+                <div class="card_item">
+                    <h2>Exemplo com if e or</h2>
+                    <div class="code_example">
+                        <pre><code>a = 5
+b = 3
+if a < 10 or b > 5:
+    print("Pelo menos uma das condições é verdadeira.")
+# Output: Pelo menos uma das condições é verdadeira.
+                        </code></pre>
+                    </div>
+                </div>
+
+                <div class="card_item">
+                    <h2>Exemplo com if e not</h2>
+                    <div class="code_example">
+                        <pre><code>a = 5
+if not a > 10:
+    print("A condição é falsa, então o not a torna verdadeira.")
+# Output: A condição é falsa, então o not a torna verdadeira.
+                        </code></pre>
+                    </div>
+                </div>
+
+                <div class="card_item">
+                    <h1>Precedência de Operadores Lógicos</h1>
+                    <p>A precedência dos operadores lógicos é a ordem em que as operações são realizadas quando múltiplos operadores são usados em uma expressão. Em Python, a precedência é a seguinte (da mais alta para a mais baixa):</p>
+
+                    <ul>
+                        <li>not</li>
+                        <li>and</li>
+                        <li>or</li>
+                    </ul>
+                </div>
+                
+
+            </div>
         </div>
+
+        <div class="botoes">
+            <a href="./operadores_comparacao.html"><div class="btn cancelar">Voltar</div></a>
+            <a href="../conteudo_5/estruturas_repeticao.html"><div class="btn avancar">Avançar</div></a>
+          </div>
     </main>
-
-
-
-
-
 </body>
 </html>
