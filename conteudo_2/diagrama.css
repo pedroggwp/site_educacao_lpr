@@ -79,6 +79,54 @@ article {
     color: #ccc;
 }
 
+.botoes {
+    padding: 20px;
+    display: flex;
+    justify-content: end;
+    font-family: "Jaldi", sans-serif;
+    margin-top: 10px;
+}
+  
+.btn {
+    cursor: pointer;
+    border-radius: 8px;
+    color: #ffffff;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+}
+
+.avancar, .fechar{
+    background-color: #ffd342;
+}
+
+.cancelar a {
+    background-color: #3972a200;
+    text-decoration: none;
+    color: white;
+}
+
+.avancar a {
+    background-color: #ffd34200;
+    text-decoration: none;
+    color: white;
+}
+
+.avancar:hover, .fechar:hover{
+    background-color: #f1c73c;
+}
+
+.cancelar {
+    background-color: #3972a2;
+}
+
+.cancelar:hover {
+    background-color: #30628b;
+}
+
 /* .container {
     position: relative;
     width: 200px;
