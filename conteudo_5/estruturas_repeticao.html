@@ -30,13 +30,55 @@
     <main>
         <div class="conteudo">
             <h1 class="titulo-conteudo">Estruturas de Repetição</h1>
-            <p class="descricao-conteudo">As estruturas de repetição são utilizadas quando queremos que um bloco de código seja executado várias vezes.
-                
-                O for é usado quando se quer iterar sobre um bloco de código um número determinado de vezes.
-                
-                O while é usado quando queremos que o bloco de código seja repetido até que uma condição seja satisfeita. Ou seja, é necessário que uma expressão booliana dada seja verdadeira. Assim que ela se tornar falsa, o while para.</p>
-            <p class="descricao-conteudo">Em Python existem duas formas de criar uma estrutura de repetição:</p>
-            
+            <p class="descricao-conteudo">As estruturas de repetição são utilizadas quando queremos que um bloco de código seja executado várias vezes, basicamente como funciona um loop.</p>
+            <ul class="descricao-conteudo"><p class="descricao-conteudo">Em Python existem duas formas de criar uma estrutura de repetição:</p>
+                <li class="descricao-conteudo">O <strong>for</strong> é usado quando se quer <strong>iterar</strong> sobre um bloco de código <strong>um número determinado de vezes.</strong></li>
+                <code>
+                    for a in range(0,5):<br>
+                    &emsp;&emsp;print(a)
+                </code>
+                <li class="descricao-conteudo">O <strong>for</strong> também p<strong>ode ser utilizado para percorrer uma sequência de dados</strong> (seja esse uma lista, uma tupla, uma string), executando um bloco de código.</li>
+                <code>
+                    frutas = ["maçã", "banana", "cereja"]
+                    <br>
+                    # Percorrendo a lista
+                    <br>
+                    for fruta in frutas:
+                    <br>
+                    &emsp;&emsp;print(fruta)
+                </code>
+                <li class="descricao-conteudo">Às vezes, você pode precisar do <strong>índice do elemento</strong> além do valor. Isso pode ser feito <strong>usando a função enumerate()</strong>.</li>
+                <code>
+                    # Exemplo de lista <br>
+                    frutas = ["maçã", "banana", "cereja"] <br>
+                    # Percorrendo a lista com índices <br>
+                    for indice, fruta in enumerate(frutas): <br>
+                    &emsp;&emsp;print(f"Índice: {indice}, Fruta: {fruta}")
+                </code>
+                <li class="descricao-conteudo">O <strong>while</strong> é usado quando queremos que o bloco de código seja <strong>repetido</strong> até que uma condição seja satisfeita. <strong>Ou seja, é necessário que uma expressão booliana dada seja verdadeira. Assim que ela se tornar falsa, o while para.</strong></li>
+                <code>
+                    numeroRepetir = 0 <br>
+                    while numeroRepetir &lt 10:<br>
+                    &emsp;&emsp;print(numeroRepetir)<br>
+                    &emsp;&emsp;numeroRepetir += 1
+                </code>
+                <li class="descricao-conteudo">O <strong>while True</strong> cria um <strong>loop que continua para sempre</strong>, até que você o <strong>pare usando a instrução break</strong>. Esse tipo de loop é útil quando você quer que o programa continue rodando até que algo específico aconteça.</li>
+                <code>
+                    numeroRepetir = 100 <br>
+                    while True: <br>
+                    &emsp;&emsp;numeroRepetir = numeroRepetir + 1  <br>
+                    &emsp;&emsp;if numeroRepetir > 100: <br>
+                    &emsp;&emsp;&emsp;&emsp;break
+                </code>
+            </ul>
+            <h1 class="titulo-conteudo">Veja um exemplo prático</h1>
+            <div class="form">
+                <p class="titulo-interacao">Digite o <strong>número de vezes</strong> que o quadrado mudará de de cor até voltar ao azul:</p>
+                <input type="text" name="" class="input" id="inputInteracao">
+            </div>
+            <div class="quadrado" id="quadrado">
+                <p id="contador">Mudança de cor=X</p>
+            </div>
         </div>
         <div class="desafio">
             <p>Desafio</p>
