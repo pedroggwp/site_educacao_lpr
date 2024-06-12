@@ -71,6 +71,10 @@
     border-radius: 10px;
 }
 
+ul {
+    margin: 0px 20px 0px 20px;
+    color: white;
+}
 .avancar, .fechar{
     background-color: #ffd342;
 }
@@ -97,4 +101,13 @@
 
 .cancelar:hover {
     background-color: #30628b;
+}
+
+h2 {
+    margin-top: 10px;
+    padding: 10px 0px 10px 0px;
+}
+
+a {
+    text-decoration: none;
 }
