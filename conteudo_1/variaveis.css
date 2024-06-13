@@ -1,12 +1,9 @@
-* {
-  font-family: "Jaldi", sans-serif;
-  padding: 0;
-  color: white;
-}
-
 main {
-  padding: 20px;
-  margin: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 15px;
+
+  font-family: "Jaldi", sans-serif;
 }
 
 code {
@@ -19,6 +16,7 @@ code {
   display: block;
   border-radius: 5px;
   width: 96%;
+  color: white;
 }
 
 p {
@@ -81,6 +79,7 @@ strong {
   display: block;
   border-radius: 5px;
   resize: none;
+  color: white;
 }
 .erro {
   color: red;
