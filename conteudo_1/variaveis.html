@@ -79,9 +79,53 @@
             <p>Desafio</p>
         </div>
         <div class="botoes">
-            <a href="../home/home.html"><div class="btn cancelar">Voltar</div></a>
-            <a href="../conteudo_2/diagrama.html"><div class="btn avancar">Avançar</div></a>
+            <div class="btn cancelar"><a href="/site_educacao_lpr/home/home.html">Voltar</a></div>
+            <div class="btn avancar"><a href="/site_educacao_lpr/conteudo_2/diagrama.html">Avançar</a></div>
         </div>
+
+
+        <!-- QUIZ -->
+        <div id="fundo-quiz">
+            <div id="popup-perguntas" class="quiz-popup">
+                <div class="header-quiz">QUIZ</div>
+                <div class="body-quiz">
+                    <div class="code-modal">
+                        <div class="code-header">.</div>
+                        <div class="code-body">
+                            <p><br><br></p>
+                        </div>
+                    </div>
+                    <div class="quiz-pergunta"><strong></strong></div>
+                    <div class="quiz-alternativas">
+                        <div class="alternativa"></div>
+                        <div class="alternativa"></div>
+                        <div class="alternativa"></div>
+                        <div class="alternativa"></div>
+                    </div>
+                    <div class="botoes">
+                        <div class="btn cancelar">cancelar</div>
+                        <div class="btn avancar">avançar</div>
+                    </div>
+                </div>
+            </div>
+            <div id="popup-acertos" class="quiz-popup invisivel">
+                <div class="header-quiz">QUIZ</div>
+                <div class="body-quiz">
+                    <div style="padding: 20px; padding-bottom: 80px;text-align: center;">
+                        <img src="./Frame 18.png" alt="check">
+                        <p style="font-size: 20px; color: #FFF;padding-top: 15px;">Quiz Finalizado!</p>
+                        <p style="font-size: 20px; color: #FFF;padding-top: 15px;">Você acertou:</p>
+                        <p id="quantidadeAcertos">.</p>
+                        <br>
+                        <div id="erros"></div>
+                        <div class="botoes" style="display: flex;justify-content: center;padding-top: 30px;">
+                            <div class="btn fechar">Fechar</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
 </body>
 </html>
