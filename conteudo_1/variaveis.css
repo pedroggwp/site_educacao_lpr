@@ -1,129 +1,270 @@
-*{
-    background-color: #342E37;
-    font-family: "Jaldi", sans-serif;
-    padding: 0;
-    color: white;
-}
-
 main {
-    padding: 20px;
-    margin: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 15px;
+
+  font-family: "Jaldi", sans-serif;
 }
 
-.titulo-conteudo{
-    color: #3972A2;
-    margin-bottom: 15px;
-    font-weight: bold;
+code {
+  width: 96%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: #1e1e1e;
+  padding: 25px 15px;
+  border-left: 10px solid #3972a2;
+  display: block;
+  border-radius: 5px;
+  width: 96%;
+  color: white;
 }
 
-.subtitulo-conteudo{
-    color: #3972A2;
-    font-weight: bold;
-    margin-bottom: 15px;
-    margin-top: 15px;
+p {
+  padding: 0%;
+  margin: 0%;
+  color: #ffffff;
 }
 
-.descricao-conteudo{
-    line-height: 25px;
-    margin-bottom: 15px;
-    width: 96%;
+strong {
+  color: #3972a2;
 }
 
-code{
-    width: 96%;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    background-color: #1E1E1E;
-    padding: 25px 15px;
-    border-left: 10px solid #3972A2;
-    display: block;
-    border-radius: 5px;
-    width: 96%;
-}
-.desafio{
-    display: flex;
-    justify-content: center;
+.titulo-conteudo {
+  color: #3972a2;
+  margin-bottom: 15px;
+  font-weight: bold;
 }
 
-.desafio p{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 400px;
-    height: 75px;
-    background-color: #3972A2;
-    border: 0;
-    border-radius: 5px;
-    color: white;
-    font-size: 18px;
-    cursor: pointer;
+.subtitulo-conteudo {
+  color: #3972a2;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
-.input{
-    width: 96%;
-    font-size: 15px;
-    border: 0 none; 
-    margin-top: 15px;
-    margin-bottom: 15px;
-    background-color: #1E1E1E;
-    padding: 25px 15px;
-    border-left: 10px solid #3972A2;
-    display: block;
-    border-radius: 5px;
-    resize: none;
+
+.descricao-conteudo {
+  line-height: 25px;
+  margin-bottom: 15px;
+  width: 96%;
 }
-.erro{
-    color: red;
+
+.desafio {
+  display: flex;
+  justify-content: center;
 }
-.invisivel{
-    display: none;
+
+.desafio p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 400px;
+  height: 75px;
+  background-color: #3972a2;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+.input {
+  width: 96%;
+  font-size: 15px;
+  border: 0 none;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: #1e1e1e;
+  padding: 25px 15px;
+  border-left: 10px solid #3972a2;
+  display: block;
+  border-radius: 5px;
+  resize: none;
+  color: white;
+}
+.erro {
+  color: red;
+}
+.invisivel {
+  display: none;
 }
 
 .botoes {
-    padding: 20px;
-    display: flex;
-    justify-content: end;
-    font-family: "Jaldi", sans-serif;
-    margin-top: 10px;
-}
-  
-.btn {
-    cursor: pointer;
-    border-radius: 8px;
-    color: #ffffff;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 5px;
-    width: 130px;
-    display: flex;
-    justify-content: center;
+  padding: 20px;
+  display: flex;
+  justify-content: end;
+  font-family: "Jaldi", sans-serif;
+  margin-top: 10px;
 }
 
-.avancar, .fechar{
-    background-color: #ffd342;
+.btn {
+  cursor: pointer;
+  border-radius: 8px;
+  color: #ffffff;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px;
+  width: 130px;
+  display: flex;
+  justify-content: center;
+}
+
+.avancar,
+.fechar {
+  background-color: #ffd342;
 }
 
 .cancelar a {
-    background-color: #3972a200;
-    text-decoration: none;
-    color: white;
+  background-color: #3972a200;
+  text-decoration: none;
+  color: white;
 }
 
 .avancar a {
-    background-color: #ffd34200;
-    text-decoration: none;
-    color: white;
+  background-color: #ffd34200;
+  text-decoration: none;
+  color: white;
 }
 
-.avancar:hover, .fechar:hover{
-    background-color: #f1c73c;
+.avancar:hover,
+.fechar:hover {
+  background-color: #f1c73c;
 }
 
 .cancelar {
-    background-color: #3972a2;
+  background-color: #3972a2;
 }
 
 .cancelar:hover {
-    background-color: #30628b;
+  background-color: #30628b;
 }
-  
+
+/* QUIZ */
+
+#fundo-quiz {
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(28, 28, 28, 0.682);
+}
+
+#quantidadeAcertos {
+  font-size: 25px;
+  color: #fff;
+}
+
+.invisivel {
+  display: none;
+}
+
+.quiz-popup {
+  font-family: "Jaldi";
+  width: 50%;
+  border-radius: 15px;
+}
+
+.header-quiz {
+  padding: 5px;
+  font-size: 22px;
+  color: white;
+  background-color: #3972a2;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.body-quiz {
+  background-color: #342e37;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.code-modal {
+  display: flex;
+  padding: 20px;
+}
+
+.code-header {
+  color: #3972a2;
+  background-color: #3972a2;
+  padding: 5px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.code-body {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: #ffffff;
+  background-color: #1c1c1c;
+  border-radius: 0px 5px 5px 0px;
+  padding: 20px 0px 20px 15px;
+}
+
+.quiz-pergunta {
+  color: #ffffff;
+  padding: 20px;
+  padding-top: 0px;
+  font-size: larger;
+}
+
+.quiz-alternativas {
+  padding: 20px;
+  padding-top: 0;
+}
+
+.alternativa {
+  cursor: pointer;
+  margin-bottom: 10px;
+  color: #ffffff;
+  padding: 10px;
+  display: flex;
+  width: auto;
+  background-color: #3972a2;
+  border-radius: 8px;
+}
+
+.alternativa:hover {
+  background-color: #30628b;
+}
+
+.clicado {
+  background-color: #30628b;
+}
+
+.botoes {
+  padding: 20px;
+  padding-top: 0;
+  display: flex;
+  justify-content: end;
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 8px;
+  color: #ffffff;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.avancar,
+.fechar {
+  background-color: #ffd342;
+}
+.avancar:hover,
+.fechar:hover {
+  background-color: #f1c73c;
+}
+
+.cancelar {
+  background-color: #3972a2;
+}
+.cancelar:hover {
+  background-color: #30628b;
+}
