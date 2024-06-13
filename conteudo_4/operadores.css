@@ -111,3 +111,7 @@ h2 {
 a {
     text-decoration: none;
 }
+
+.menu li.active a {
+    color: #3972A2;
+}
