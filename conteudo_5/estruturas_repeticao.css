@@ -373,3 +373,7 @@ p {
   .cancelar:hover {
     background-color: #30628b;
   }
+
+  #pagina {
+    color: #30628b;
+  }
