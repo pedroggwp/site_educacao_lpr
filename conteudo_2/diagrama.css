@@ -80,7 +80,6 @@ article {
     border-radius: 5px;
     width: 100%;
     background-color: #222123;
-
 }
 
 .red {
@@ -188,3 +187,8 @@ span {
   .seta-esquerda4 {
       left: 320px;
   }
+
+.botoes {
+    position: fixed;
+    bottom: 100px;
+}
