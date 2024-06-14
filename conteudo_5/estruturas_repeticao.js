@@ -29,7 +29,7 @@ async function executarLoop() {
         contadorTexto.style.backgroundColor = `rgb(${r},${g},${b})`;
         cont++;            
         contadorTexto.textContent = "Mudança de cor=" + cont
-        await sleep(3000)
+        await sleep(1500)
     }
     contadorTexto.style.backgroundColor = "#3972A2"
     contadorTexto.textContent = "Mudança de cor=X"

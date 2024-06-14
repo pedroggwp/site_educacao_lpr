@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap');
+
+
+.card_box {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    font-family: "Jaldi", sans-serif;
+}
+
+.card_item {
+    width: 100%;
+    
+}
+
+.card_item h1, .card_item h2 {
+    /* font-family: "Jaldi", sans-serif; */
+
+    color: #3972A2;
+}
+
+.card_item p {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.code_example {
+    color: white;   
+    background-color: #1C1C1C;
+    border-left: solid #3972A2 10px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.code_example code {
+    background-color: #1C1C1C;
+    display: block;
+    line-height: 20px;
+}
+
+.botoes {
+    padding: 20px;
+    display: flex;
+    justify-content: end;
+    font-family: "Jaldi", sans-serif;
+    margin-top: 10px;
+}
+  
+.btn {
+    cursor: pointer;
+    border-radius: 8px;
+    color: #ffffff;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+}
+
+.invisivel {
+    display: none;
+}
+
+#saiba_mais p {
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #3972A2;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+ul {
+    margin: 0px 20px 0px 20px;
+    color: white;
+}
+.avancar, .fechar{
+    background-color: #ffd342;
+}
+
+.cancelar a {
+    background-color: #3972a200;
+    text-decoration: none;
+    color: white;
+}
+
+.avancar a {
+    background-color: #ffd34200;
+    text-decoration: none;
+    color: white;
+}
+
+.avancar:hover, .fechar:hover{
+    background-color: #f1c73c;
+}
+
+.cancelar {
+    background-color: #3972a2;
+}
+
+.cancelar:hover {
+    background-color: #30628b;
+}
+
+h2 {
+    margin-top: 10px;
+    padding: 10px 0px 10px 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu li.active a {
+    color: #3972A2;
+}
+#interacao{
+    display: flex;
+}
+
+#interacao p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+    height: 60px;
+    background-color: #3972A2;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+.quadrado{
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.quadrado p{
+    justify-content: center;
+    align-content: center;
+    height: 110px;
+    width: 110px;
+    margin-bottom: 25px;
+    background-color: #3972A2;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+}
