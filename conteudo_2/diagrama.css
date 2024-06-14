@@ -4,6 +4,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Jaldi", sans-serif;
+    font-weight: normal;
 }
 
 h2, h3 {
@@ -11,6 +13,13 @@ h2, h3 {
     margin: 20px 0;
     text-align: center;
 }
+#diagrama-titulo, #diagrama-conteudo{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-left: 20px;
+    margin-right: 100px;
+  }
 
 main {
     display: inline;
