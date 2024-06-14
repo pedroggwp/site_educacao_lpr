@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
 
     <script src="../home/home.js" defer></script>
+    <script src="index.js" defer></script>
     <script src="../Home/home.js" defer></script>
 </head>
 <body>
@@ -37,8 +38,17 @@
 
     <main>
         <div class="conteudo">
-            <h1 id="titulo-conteudo">Titulo Conteúdo</h1>
-            <p id="descricao-conteudo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae velit sit amet arcu elementum viverra. Proin cursus ex quam, nec facilisis urna lacinia ut. Nunc sollicitudin imperdiet odio a sagittis. Morbi tempor iaculis enim at sagittis. Duis eros tortor, cursus eu ipsum in, feugiat scelerisque magna. Quisque leo orci, sagittis at suscipit eget, eleifend eget libero. Suspendisse sodales cursus</p>
+            <h1 id="titulo-conteudo">Input</h1>
+            <p id="descricao-conteudo">O input é uma ferramenta que tem como objetivo principal coletar dados da entrada do usuário. Em outras palavra, permite que durante a execução do programa, seja fornecida alguma informação, que é então capturada e utilizada em outras partes do código. Veja o exemplo a seguir:</p>
+            <pre><code>
+                nome = input("Digite o seu nome: ")
+                print(f"Olá, {nome}!")
+            </code></pre>
+            <p id="descricao-conteudo">Nesse exemplo, pegamos o nome fornecido pelo usuário e o mostramos logo em seguida.</p>
+            <h2 id="titulo-exercicio">Agora é a sua vez!</h2>
+            <p>
+                Maria é "Analista de dados" e gostaria de fornecer seu cargo na empresa para o time de RH, para isso, crie um programa que pegue o cargo de Maria e apenas mostre-o depois. Execute o programa no compilador ao lado.
+            </p>
         </div>
 
         <div class="form">
@@ -51,5 +61,19 @@
             </div>
         </div>
     </main>
+    <div id="modal">
+        <dialog id="modal_erro">
+            <h1 class="modal-titulo">ERRO!</h1>
+            <img src="img/erro_img.webp" alt="imagem de erro" class="modal-img">
+            <p class="modal-conteudo">O retorno indicado está errado. Verifique sua lógica ou sintaxe.</p>
+            <input type="button" value="Continuar" class="bt_continuar" id="continuar_erro">
+        </dialog>
+        <dialog id="modal_certo">
+            <h1 class="modal-titulo">Aprovado!</h1>
+            <img src="img/certo_img.png" alt="imagem certa" class="modal-img">
+            <p class="modal-conteudo">Parabéns! O retorno indicado está certo. Continue os desafios.</p>
+            <input type="button" value="Continuar" class="bt_continuar" id="continuar_certo">
+        </dialog>
+    </div>
 </body>
 </html>
