@@ -1,9 +1,15 @@
 const input = document.getElementById("inputInteracao")
 const contadorTexto = document.getElementById("contador")
+let rodando = false;
 
 input.addEventListener('keydown',(event)=>{
     if(event.key == "Enter"){
-        executarLoop();
+        if(rodando){
+            window.alert("O quadrado está mudando de cor ainda")
+        }
+        else{
+            executarLoop();
+        }
     }
 })
 
@@ -13,6 +19,7 @@ function sleep(ms) {
 
 // Função assíncrona que executa o loop while com pausas
 async function executarLoop() {
+    rodando = true
     let cont = 0;
     const valorWhile = input.value
     while (valorWhile > cont) {
@@ -22,10 +29,11 @@ async function executarLoop() {
         contadorTexto.style.backgroundColor = `rgb(${r},${g},${b})`;
         cont++;            
         contadorTexto.textContent = "Mudança de cor=" + cont
-        await sleep(3000)
+        await sleep(1500)
     }
     contadorTexto.style.backgroundColor = "#3972A2"
     contadorTexto.textContent = "Mudança de cor=X"
+    rodando = false
 }
 const btDesafio = document.getElementsByClassName("desafio");
 
