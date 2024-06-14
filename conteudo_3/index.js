@@ -7,6 +7,9 @@ const bt_submit = document.getElementById("submit")
 bt_submit.addEventListener("click", async function (event) {
     event.preventDefault(); //Previnindo que a pagina não recarregue ao enviar formulario
     const codigo = document.getElementById("input").value;
+    if (document.getElementById("input").textContent.includes("input")){
+      
+    }
     try {
       //Indicando o caminho até o script python, /execute é o caminho q passei no script
       const requisicao = await fetch("https://flask-api-dad.onrender.com/execute", {
@@ -19,13 +22,9 @@ bt_submit.addEventListener("click", async function (event) {
         //Adicionando um objeto do codigo no json
         body: JSON.stringify({ codigo: codigo }),
       });
-
       //Pegando o resultado da requisição
       const resultado = await requisicao.json();
-      console.log(resultado)
-
       console.log("resultado.output"+resultado.output)
-      
       //Coloquei o resultado previsto como "hello world" de exemplo
       if(resultado.output.trim().toLowerCase() === "hello world"){
         modal_certo.showModal();

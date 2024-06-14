@@ -1,31 +1,31 @@
-/* @import url("https://fonts.cdnfonts.com/css/museo-sans-rounded"); */
 @import url("https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap");
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-h2,
-h3 {
-    margin-top: 1rem;
+h2, h3 {
     color: #3972a2;
+    margin: 20px 0;
+    text-align: center;
 }
 
 main {
-    display: grid;
+    display: inline;
 }
 
 p {
-    color: white;
-    margin-bottom: 2rem;
-    margin-left: 1rem;
-    margin-top: 1rem;
+    margin: 20px;
+    text-align: justify;
+    color: #ccc;
 }
 
 #diagrama {
     border-radius: 5px;
-    padding: 1rem;
+    padding: 20px;
+    width: 80%;
 }
 
 article {
@@ -44,15 +44,20 @@ article {
     padding: 15px;
     text-align: center;
     width: 110px;
-    height: 10px;
+    height: 50px;
+    margin: 10px 0;
+    color: #000;
 }
 
 #blocosDisponiveis {
     display: flex;
     justify-content: space-evenly;
-    background-color: #1C1C1C;
-    margin: 10px;
-    padding: 50px;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #222123;
+
 }
 
 .bloco {
@@ -60,25 +65,23 @@ article {
     justify-content: center;
     align-items: center;
     border: 1px solid #ccc;
-    background-color: #ccc;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     width: 110px;
-    height: 10px;
+    height: 50px;
+    margin: 0 10px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
 }
 
 .red {
     border-radius: 25px;
 }
 
-.retD {
-    width: 110px;
-    height: 10px;
-}
-
 #cond {
-    width: 50px;
-    height: 50px;
+    width: 58px;
+    height: 58px;
     margin-top: 20px;
     transform: rotate(45deg);
     display: flex;
@@ -86,7 +89,7 @@ article {
     align-items: center;
 }
 
-.cond > span {
+#cond > span {
     transform: rotate(-45deg);
 }
 
@@ -94,6 +97,7 @@ article {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin: 20px 0;
 }
 
 .processamento-wrapper {
@@ -106,7 +110,7 @@ article {
 
 .ret {
     width: 110px;
-    height: 10px;
+    height: 50px;
 }
 
 #circulo {
@@ -114,6 +118,7 @@ article {
     height: 30px;
     border-radius: 50%;
     border: 1px solid #ccc;
+    margin: 20px 0;
 }
 
 span {
@@ -123,100 +128,55 @@ span {
 .seta {
     color: #ccc;
     font-size: 1.5rem;
-    margin: 2px 0;
+    margin: 10px 0;
 }
 
-.seta {
-    margin: 0 auto;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    color: #ccc;
+.seta-direita,
+.seta-direita2,
+.seta-esquerda,
+.seta-esquerda2 {
+  position: absolute;
+  top: 118.5%;
+  transform: translateY(-50%);
 }
 
-.botoes {
-    padding: 20px;
-    display: flex;
-    justify-content: end;
-    font-family: "Jaldi", sans-serif;
-    margin-top: 10px;
+.seta-direita3,
+.seta-direita4,
+.seta-esquerda3,
+.seta-esquerda4 {
+  position: absolute;
+  top: 176.5%;
+  transform: translateY(-50%);
 }
+
+.seta-direita {
+  right: 400px; /* Ajuste a posição da seta direita conforme necessário */
+}
+
+.seta-esquerda {
+  left: 400px; /* Ajuste a posição da seta esquerda conforme necessário */
+}
+
+.seta-direita2 {
+    right: 320px;
+}
+
+.seta-esquerda2 {
+    left: 320px;
+}
+
+.seta-direita3 {
+    right: 400px; /* Ajuste a posição da seta direita conforme necessário */
+  }
   
-.btn {
-    cursor: pointer;
-    border-radius: 8px;
-    color: #ffffff;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 5px;
-    width: 130px;
-    display: flex;
-    justify-content: center;
-}
-
-.avancar, .fechar{
-    background-color: #ffd342;
-}
-
-.cancelar a {
-    background-color: #3972a200;
-    text-decoration: none;
-    color: white;
-}
-
-.avancar a {
-    background-color: #ffd34200;
-    text-decoration: none;
-    color: white;
-}
-
-.avancar:hover, .fechar:hover{
-    background-color: #f1c73c;
-}
-
-.cancelar {
-    background-color: #3972a2;
-}
-
-.cancelar:hover {
-    background-color: #30628b;
-}
-
-/* .container {
-    position: relative;
-    width: 200px;
-    height: 200px;
-}
-.arrow {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    border: 2px solid white;
-    border-bottom: none;
-    border-left: none;
-    top: 50px;
-    left: 50px;
-}
-.arrow::after {
-    content: '';
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    width: 10px;
-    height: 10px;
-    border-top: 2px solid white;
-    border-right: 2px solid white;
-    transform: rotate(45deg);
-}
-.text-sim, .text-nao {
-    position: absolute;
-    color: white;
-    font-family: Arial, sans-serif;
-}
-.text-sim {
-    top: 50px;
-    left: 110px;
-}
-.text-nao {
-    bottom: 40px;
-    left: 50px;
-} */
+  .seta-esquerda3 {
+    left: 400px; /* Ajuste a posição da seta esquerda conforme necessário */
+  }
+  
+  .seta-direita4 {
+      right: 320px;
+  }
+  
+  .seta-esquerda4 {
+      left: 320px;
+  }
