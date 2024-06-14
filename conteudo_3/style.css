@@ -6,7 +6,7 @@
 }
 
 main {
-    display: flex;
+    /* display: flex; */
     padding: 20px;
 }
 #input{
@@ -16,7 +16,7 @@ main {
     height: 260px;
     width: 600px;
     margin-top: 60px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     outline: 0;
     border: 0 none;
     border-left: #3972A2 15px solid;
@@ -31,7 +31,7 @@ main {
     border-radius: 3px;
     border: 0px;
     margin: 0;
-    float: right;
+
 }
 
 #titulo-conteudo, #titulo-exercicio{
@@ -62,10 +62,12 @@ main {
 }
 
 .botoes {
+    padding: 20px;
+    padding-top: 0;
     display: flex;
     justify-content: end;
-    width: 100%;  
-}
+    
+  }
 
 code {
     width: 96%;
@@ -122,8 +124,47 @@ code {
     border: 0px;
     padding: 1px 20px;
     border-radius: 3px;
-    float: right;
+    /* float: right; */
     margin-left: 20px;   
     margin-right: 60px;
     margin-top: 30px;
 }
+
+.botoes {
+    padding: 20px;
+    padding-top: 0;
+    display: flex;
+    justify-content: end;
+}
+  
+.botoes a {
+    text-decoration: none;
+}
+  
+.btn {
+    cursor: pointer;
+    border-radius: 8px;
+    color: #ffffff;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .avancar,
+  .fechar {
+    background-color: #ffd342;
+  }
+  .avancar:hover,
+  .fechar:hover {
+    background-color: #f1c73c;
+  }
+  
+  .cancelar {
+    background-color: #3972a2;
+  }
+  .cancelar:hover {
+    background-color: #30628b;
+  }

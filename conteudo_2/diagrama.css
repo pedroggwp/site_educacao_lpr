@@ -13,6 +13,7 @@ h2, h3 {
     margin: 20px 0;
     text-align: center;
 }
+
 #diagrama-titulo, #diagrama-conteudo{
     display: flex;
     justify-content: start;
@@ -191,4 +192,8 @@ span {
 .botoes {
     position: fixed;
     bottom: 100px;
+}
+
+#atual {
+    color: #3972a2;
 }

@@ -241,6 +241,10 @@ strong {
   justify-content: end;
 }
 
+.botoes a {
+  text-decoration: none;
+}
+
 .btn {
   cursor: pointer;
   border-radius: 8px;
