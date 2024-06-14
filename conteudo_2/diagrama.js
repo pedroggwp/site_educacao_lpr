@@ -5,9 +5,8 @@ let blocoAtual = null;
 
 // Função para restaurar o bloco para a lista original
 function resetarBloco(bloco) {
-    bloco.style.padding = "";
-    bloco.style.border = "";
-    document.getElementById("blocosDisponiveis").appendChild(bloco);
+    lugar = document.getElementById("blocosDisponiveis")
+    lugar.appendChild(bloco)
 }
 
 // Função para lidar com o início do arrasto
@@ -51,8 +50,6 @@ function handleDrop(e) {
         window.alert("Bloco na posição incorreta! Tente novamente");
         resetarBloco(bloco);
     }
-
-    removeHighlight(e.target);
 }
 
 // Adiciona eventos de arrastar e soltar para cada bloco
