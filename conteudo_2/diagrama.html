@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Diagrama de Blocos</title>
     <link rel="stylesheet" href="diagrama.css" />
-    <link rel="stylesheet" href="../conteudo_4/operadores.css">
     <link rel="stylesheet" href="../home/style/header.css" />
-    
 
     <script src="./diagrama.js" defer></script>
     <script src="../home/header.js" defer></script>
@@ -25,9 +23,7 @@
             <li><a href="">Conteudo</a></li>
         </ul>
     </header>
-  </header>
 
-  <body>
     <main id="diagrama">
         <h2>Desafio 1</h2>
         <p>
@@ -44,39 +40,107 @@
         </p>
         <h3>Conforme o Desafio, arraste os blocos na posição correta!</h3>
 
-      <article id="posicaoBlocos">
-        <div class="posicaoBloco red" id="inicio"><span class="text">Início</span></div>
-        <span class="seta">&darr;</span>
-        <div class="posicaoBloco retD posicaoBloco1" id="entrada"></div>
-        <span class="seta">&darr;</span>
-        <div class="posicaoBloco posicaoBloco2" id="cond"></div>
-        <div id="processamentos">
-          <div class="processamento-wrapper">
-            <span>V</span>
-            <div class="posicaoBloco ret posicaoBloco3" id="processamento1"></div>
-          </div>
-          <div class="processamento-wrapper">
-            <span>F</span>
-            <div class="posicaoBloco ret posicaoBloco4" id="processamento2"></div>
-          </div>
+        <article id="posicaoBlocos">
+            <div class="posicaoBloco red" id="inicio"><span class="text">Início</span></div>
+            
+            <svg class="seta" width="20" height="60">
+                <line x1="10" y1="0" x2="10" y2="60" stroke="#ccc" stroke-width="2" />
+                <polygon points="5,55 15,55 10,60" fill="#ccc" />
+            </svg>
+            
+            <div class="posicaoBloco ret posicaoBloco1" id="posicao1"></div>
+            
+            <svg class="seta" width="20" height="60">
+                <line x1="10" y1="0" x2="10" y2="60" stroke="#ccc" stroke-width="2" />
+                <polygon points="5,55 15,55 10,60" fill="#ccc" />
+            </svg>
+            
+            <div class="posicaoBloco" id="cond"><span class="text">Condição</span></div>
+            
+            <svg class="seta-direita" width="100" height="20">
+                <line x1="0" y1="10" x2="100" y2="10" stroke="#ccc" stroke-width="2"/>
+            </svg>
+            <svg class="seta-direita2" width="100" height="20">
+                <line x1="0" y1="10" x2="100" y2="10" stroke="#ccc" stroke-width="2"/>
+            </svg>
+            
+            <svg class="seta-esquerda" width="100" height="20">
+                <line x1="0" y1="10" x2="100" y2="10" stroke="#ccc" stroke-width="2" />
+            </svg>
+            <svg class="seta-esquerda2" width="100" height="20">
+                <line x1="0" y1="10" x2="100" y2="10" stroke="#ccc" stroke-width="2" />
+            </svg>
+            
+            <div id="processamentos">
+                <div class="processamento-wrapper">
+                    <p>V</p>
+                    
+                    <svg class="seta" width="20" height="60">
+                        <line x1="10" y1="0" x2="10" y2="60" stroke="#ccc" stroke-width="2" />
+                        <polygon points="5,55 15,55 10,60" fill="#ccc" />
+                    </svg>
+                    
+                    <div class="posicaoBloco ret posicaoBloco3" id="posicao3"></div>
+                </div>
+                
+                <div class="processamento-wrapper">
+                    <p>F</p>
+                    
+                    <svg class="seta" width="20" height="60">
+                        <line x1="10" y1="0" x2="10" y2="60" stroke="#ccc" stroke-width="2" />
+                        <polygon points="5,55 15,55 10,60" fill="#ccc" />
+                    </svg>
+                    
+                    <div class="posicaoBloco ret posicaoBloco4" id="posicao4"></div>
+                </div>
+            </div>
+            
+            <svg class="seta-direita3" width="100" height="20">
+                <line x1="100" y1="10" x2="0" y2="10" stroke="#ccc" stroke-width="2" />
+                <polygon points="10,5 10,15 0,10" fill="#ccc" />
+            </svg>
+            <svg class="seta-direita4" width="100" height="20">
+                <line x1="100" y1="10" x2="0" y2="10" stroke="#ccc" stroke-width="2" />
+            </svg>
+            
+            <svg class="seta-esquerda3" width="100" height="20">
+                <line x1="0" y1="10" x2="100" y2="10" stroke="#ccc" stroke-width="2" />
+                <polygon points="90,5 90,15 100,10" fill="#ccc" />
+            </svg>
+            <svg class="seta-esquerda4" width="100" height="20">
+                <line x1="0" y1="10" x2="100" y2="10" stroke="#ccc" stroke-width="2" />
+            </svg>
+            
+            <div class="posicaoBloco" id="circulo"></div>
+            
+            <svg class="seta" width="20" height="60">
+                <line x1="10" y1="0" x2="10" y2="60" stroke="#ccc" stroke-width="2" />
+                <polygon points="5,55 15,55 10,60" fill="#ccc" />
+            </svg>
+            
+            <div class="posicaoBloco ret posicaoBloco5" id="posicao5"></div>
+            
+            <svg class="seta" width="20" height="60">
+                <line x1="10" y1="0" x2="10" y2="60" stroke="#ccc" stroke-width="2" />
+                <polygon points="5,55 15,55 10,60" fill="#ccc" />
+            </svg>
+            
+            <div class="posicaoBloco ret posicaoBloco6" id="posicao6"></div>
+            
+            <svg class="seta" width="20" height="60">
+                <line x1="10" y1="0" x2="10" y2="60" stroke="#ccc" stroke-width="2" />
+                <polygon points="5,55 15,55 10,60" fill="#ccc" />
+            </svg>
+            
+            <div class="posicaoBloco red" id="fim"><span class="text">Fim</span></div>
+        </article>
+        <div id="blocosDisponiveis">
+            <div class="bloco" id="bloco1" data-posicao="1">Entrada de Dados</div>
+            <div class="bloco" id="bloco3" data-posicao="3">Processamento Bloco 1</div>
+            <div class="bloco" id="bloco4" data-posicao="4">Processamento Bloco 2</div>
+            <div class="bloco" id="bloco5" data-posicao="5">Processamento Bloco 3</div>
+            <div class="bloco" id="bloco6" data-posicao="6">Saída de Dados</div>
         </div>
-        <div class="posicaoBloco" id="circulo"></div>
-        <span class="seta">&darr;</span>
-        <div class="posicaoBloco ret posicaoBloco5" id="processamento3"></div>
-        <span class="seta">&darr;</span>
-        <div class="posicaoBloco retD posicaoBloco6" id="saida"></div>
-        <span class="seta">&darr;</span>
-        <div class="posicaoBloco red" id="fim"><span class="text">Fim</span></div>
-      </article>
-      
-      <div id="blocosDisponiveis">
-        <div class="bloco" id="bloco1" data-posicao="1">Entrada de Dados</div>
-        <div class="bloco" id="bloco2" data-posicao="2">Condição</div>
-        <div class="bloco" id="bloco3" data-posicao="3">Processamento Bloco 1</div>
-        <div class="bloco" id="bloco4" data-posicao="4">Processamento Bloco 2</div>
-        <div class="bloco" id="bloco5" data-posicao="5">Processamento Bloco 3</div>
-        <div class="bloco" id="bloco6" data-posicao="6">Saída de Dados</div>
-      </div>
     </main>
 </body>
 </html>

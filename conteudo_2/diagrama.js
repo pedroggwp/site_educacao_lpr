@@ -22,7 +22,6 @@ function handleDragStart(e) {
 // Função para lidar com o fim do arrasto
 function handleDragEnd(e) {
     setTimeout(() => {
-        blocoAtual.style.display = "block";
         blocoAtual = null;
     }, 0);
 }
@@ -30,7 +29,6 @@ function handleDragEnd(e) {
 // Função para permitir soltar na posição
 function handleDragOver(e) {
     e.preventDefault();
-    e.dataTransfer.dropEffect = "move"; // Visual feedback para o usuário
 }
 
 // Função para lidar com a ação de soltar
@@ -38,26 +36,23 @@ function handleDrop(e) {
     e.preventDefault();
     const blocoId = e.dataTransfer.getData("text");
     const bloco = document.getElementById(blocoId);
-    const posicao = e.target.closest(".posicaoBloco");
+    const posicaoId = e.target.id.replace("posicao", "");
+    const blocoPosicao = bloco.getAttribute("data-posicao");
 
-    if (posicao) {
-        const posicaoId = posicao.id.replace("posicao", "");
-        const blocoPosicao = bloco.getAttribute("data-posicao");
-
-        if (posicaoId === blocoPosicao) {
-            // Remover qualquer bloco já existente na posição
-            if (posicao.children.length > 0) {
-                resetarBloco(posicao.children[0]);
-            }
-            posicao.appendChild(bloco);
-            bloco.style.paddingLeft = "40px";
-            bloco.style.paddingRight = "40px";
-            bloco.style.border = "2px solid green"; // Feedback visual de sucesso
-        } else {
-            window.alert("Bloco na posição incorreta! Tente novamente");
-            resetarBloco(bloco);
-        }
+    if (posicaoId === blocoPosicao) {
+        e.target.appendChild(bloco);
+        bloco.style.margin = "auto"; 
+        bloco.style.padding = "0"; 
+        bloco.style.fontSize = "12px";
+        bloco.style.display = "flex";
+        bloco.style.justifyContent = "center";
+        bloco.style.alignItems = "center";
+    } else {
+        window.alert("Bloco na posição incorreta! Tente novamente");
+        resetarBloco(bloco);
     }
+
+    removeHighlight(e.target);
 }
 
 // Adiciona eventos de arrastar e soltar para cada bloco
