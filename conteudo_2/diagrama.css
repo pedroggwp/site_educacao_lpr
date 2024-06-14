@@ -197,3 +197,7 @@ span {
 #atual {
     color: #3972a2;
 }
+
+#submit {
+    cursor: pointer;
+}
