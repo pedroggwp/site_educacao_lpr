@@ -1,5 +1,7 @@
 const blocos = document.getElementsByClassName("bloco");
 const posicoes = document.getElementsByClassName("posicaoBloco");
+const modal_erro = document.getElementById("modal_erro")
+const bt_continuar = document.getElementsByClassName("bt_continuar")
 
 let blocoAtual = null;
 
@@ -46,7 +48,7 @@ function handleDrop(e) {
         bloco.style.justifyContent = "center";
         bloco.style.alignItems = "center";
     } else {
-        window.alert("Bloco na posição incorreta! Tente novamente");
+        modal_erro.showModal();
         resetarBloco(bloco);
     }
 }
@@ -62,4 +64,12 @@ for (let i = 0; i < blocos.length; i++) {
 for (let i = 0; i < posicoes.length; i++) {
     posicoes[i].ondragover = handleDragOver;
     posicoes[i].ondrop = handleDrop;
+}
+
+for (let i = 0; i < bt_continuar.length; i++) {
+    bt_continuar[i].addEventListener('click', fechar_modal)
+}
+
+function fechar_modal() {
+    modal_erro.close()
 }

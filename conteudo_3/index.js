@@ -3,6 +3,8 @@ const modal_errado = document.getElementById("modal_erro")
 const modal_certo = document.getElementById("modal_certo")
 const bt_continuar = document.getElementsByClassName("bt_continuar")
 const bt_submit = document.getElementById("submit")
+const input = document.getElementById("input")
+
 
 bt_submit.addEventListener("click", async function (event) {
     event.preventDefault(); //Previnindo que a pagina não recarregue ao enviar formulario
@@ -26,7 +28,7 @@ bt_submit.addEventListener("click", async function (event) {
       const resultado = await requisicao.json();
       console.log("resultado.output"+resultado.output)
       //Coloquei o resultado previsto como "hello world" de exemplo
-      if(resultado.output.trim().toLowerCase() === "hello world"){
+      if(resultado.output.trim().toLowerCase() === "analista de dados" && input.textContent().toLowerCase().includes("input")){
         modal_certo.showModal();
         console.log("caiu no modal certo");
       }else{

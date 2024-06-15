@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="diagrama.css" />
     <link rel="stylesheet" href="../conteudo_4/operadores.css" />
     <link rel="stylesheet" href="../home/style/header.css" />
+    <link rel="stylesheet" href="diagrama.css">
 
     <script src="./diagrama.js" defer></script>
     <script src="../home/header.js" defer></script>
@@ -252,5 +253,13 @@
         >
       </div>
     </main>
+    <div id="modal">
+      <dialog id="modal_erro">
+          <h1 class="modal-titulo">ERRO!</h1>
+          <img src="img/erro_img.webp" alt="imagem de erro" class="modal-img">
+          <p class="modal-conteudo">Bloco na posição incorreta! Tente novamente.</p>
+          <input type="button" value="Continuar" class="bt_continuar" id="continuar_erro">
+      </dialog>
+  </div>
   </body>
 </html>

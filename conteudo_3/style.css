@@ -172,3 +172,6 @@ code {
 #submit {
     cursor: pointer;
 }
+.avancar{
+    float: right;
+}
