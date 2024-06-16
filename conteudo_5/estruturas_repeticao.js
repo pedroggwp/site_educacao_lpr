@@ -41,22 +41,28 @@ document.querySelector(".desafio").addEventListener("click", () => {
   console.log("clicou");
   const perguntas = [
     {
-      code: "x = 5 <br> y = 7 <br> z = y + x",
-      pergunta: "Qual o valor de <strong>Z</strong>?",
-      alternativas: ["5", "7", "2", "12"],
-      correta: "12",
+      code: "#Opção1<br>for fruit in fruits:<br>&emsp;&emsp;print(fruit)<br><br>#Opção2<br>for i in range(len(fruits)):<br>&emsp;&emsp;print(fruits[i])<br><br>#Opção3<br>while fruit in fruits:<br>&emsp;&emsp;print(fruit)<br><br>#Opção4<br>while i < len(fruits):<br>&emsp;&emsp;print(fruits[i])<br>&emsp;&emsp;i += 1",
+      pergunta: "Qual das opções representa um loop for que percorre uma lista chamada fruits e imprime cada item da lista?",
+      alternativas: ["1", 
+      "2", 
+      "3", 
+      "4"],
+      correta: "1",
     },
     {
-      code: "a = 3 <br> b = 4 <br> c = a * b",
-      pergunta: "Qual o valor de <strong>C</strong>?",
-      alternativas: ["7", "12", "10", "15"],
-      correta: "12",
+      code: "for i in range(1, 6): <br>&emsp;&emsp;print(i)",
+      pergunta: "Como você interrompe um loop for antecipadamente em Python?",
+      alternativas: ["stop", "exit", "break", "terminate"],
+      correta: "break",
     },
     {
-      code: "m = 8 <br> n = 2 <br> p = m / n",
-      pergunta: "Qual o valor de <strong>P</strong>?",
-      alternativas: ["4", "6", "8", "10"],
-      correta: "4",
+      code: "count = 0 <br>&emsp;&emsp;while count < 3: <br>&emsp;&emsp;print('Hello, world!')<br>&emsp;&emsp;count += 1",
+      pergunta: "Qual a saída do código?",
+      alternativas: ["'Hello, world!' é impresso uma vez.", 
+      "'Hello, world!' é impresso três vezes.",
+       "O código gera um erro.", 
+       "'Hello, world!'' é impresso indefinidamente."],
+      correta: "'Hello, world!' é impresso três vezes.",
     },
   ];
 
