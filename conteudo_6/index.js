@@ -9,7 +9,7 @@ bt_submit.addEventListener("click", async function (event) {
     const codigo = document.getElementById("input").value;
     try {
       //Indicando o caminho até o script python, /execute é o caminho q passei no script
-      const requisicao = await fetch("https://flask-api-dad.onrender.com/execute", {
+      const requisicao = await fetch("http://127.0.0.1:5000/execute", {
         //Enviando requisição para enviar a mensagem
         method: "POST",
         headers: {
@@ -19,13 +19,9 @@ bt_submit.addEventListener("click", async function (event) {
         //Adicionando um objeto do codigo no json
         body: JSON.stringify({ codigo: codigo }),
       });
-
       //Pegando o resultado da requisição
       const resultado = await requisicao.json();
-      console.log(resultado)
-
       console.log("resultado.output"+resultado.output)
-      
       //Coloquei o resultado previsto como "hello world" de exemplo
       if(resultado.output.trim().toLowerCase() === "hello world"){
         modal_certo.showModal();
