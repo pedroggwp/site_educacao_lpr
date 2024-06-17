@@ -28,14 +28,13 @@ bt_submit.addEventListener("click", async function (event) {
       const resultado = await requisicao.json();
       console.log("resultado.output"+resultado.output)
       //Coloquei o resultado previsto como "hello world" de exemplo
-      if(resultado.output.trim().toLowerCase() === "analista de dados" && input.textContent().toLowerCase().includes("input")){
+      if(resultado.output.trim().toLowerCase() === "analista de dados" && input.textContent().toLowerCase().contains("input")){
         modal_certo.showModal();
         console.log("caiu no modal certo");
       }else{
         modal_errado.showModal();
         console.log("caiu no modal errado");
       }
-    //   document.getElementById("terminal").innerText = resultado.output; <= pra imprimir o resultadoado
 
     } catch (error) {
       document.getElementById("resultado").innerText =
