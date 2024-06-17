@@ -1,13 +1,13 @@
 const otherOperators = document.getElementsByClassName("others_operators")[0];
-// const knowMore = document.getElementById("saiba_mais");
+const knowMore = document.getElementById("saiba_mais");
 
-// knowMore.addEventListener("click", () => {
-//     if (otherOperators.classList.contains('invisible')) {
-//         otherOperators.classList.remove('invisible');
-//     } else {
-//         otherOperators.classList.add('invisible');
-//     }
-// });
+knowMore.addEventListener("click", () => {
+    if (otherOperators.classList.contains('invisible')) {
+        otherOperators.classList.remove('invisible');
+    } else {
+        otherOperators.classList.add('invisible');
+    }
+});
 
 var url = window.location.pathname;
 var filename = url.substring(url.lastIndexOf('/') + 1);
