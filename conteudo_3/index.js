@@ -37,8 +37,6 @@ bt_submit.addEventListener("click", async function (event) {
       }
 
     } catch (error) {
-      document.getElementById("resultado").innerText =
-        "Erro: " + error.message;
         console.log("error message"+error.message);
         modal_errado.showModal();
     }
