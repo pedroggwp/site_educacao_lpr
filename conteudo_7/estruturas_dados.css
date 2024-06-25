@@ -117,9 +117,11 @@ a {
 }
 #interacao{
     display: flex;
+    user-select: none;
 }
 
 #interacao p{
+    user-select: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,6 +139,7 @@ a {
     text-align: center;
     display: flex;
     align-items: center;
+    margin: 10px;
 }
 
 .quadrado p{
@@ -154,4 +157,9 @@ a {
 
 #pagina {
     color: #30628b;
+}
+#interativoQuadrado{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }

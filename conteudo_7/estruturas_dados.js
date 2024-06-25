@@ -1,7 +1,7 @@
 const  metodos =  document.getElementById("metodos")
 const saibaMais = document.getElementById("saiba_mais");
 const botaoInteracao = document.getElementById("interacao");
-const divInterativo = document.getElementById("interativo")
+const divInterativo = document.getElementById("interativoQuadrado")
 let cont = 0;
 
 saibaMais.addEventListener("click", () => {
