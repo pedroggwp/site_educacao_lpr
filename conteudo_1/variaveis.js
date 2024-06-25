@@ -6,6 +6,10 @@ const erroInt = document.getElementById("erroInt")
 const erroFloat = document.getElementById("erroFloat")
 const erroStr = document.getElementById("erroStr")
 const erroBool = document.getElementById("erroBool")
+const acertoInt = document.getElementById("acertoInt")
+const acertoFloat = document.getElementById("acertoFloat")
+const acertoStr = document.getElementById("acertoStr")
+const acertoBool = document.getElementById("acertoBool")
 
 barraPesquisaInt.addEventListener('keydown', (event)=>{
     if(event.key == "Enter"){
@@ -14,12 +18,14 @@ barraPesquisaInt.addEventListener('keydown', (event)=>{
         const valoresPossiveisInt = ["1","2","3","4","5","6","7","8","9","10","11","12"]
         const retornoInt = verificarCodigosInt(valorDigitadoInt,nomeVariavelInt,valoresPossiveisInt)
         if(retornoInt == 0){
+            acertoInt.classList.remove("invisivel")
             if(!erroInt.classList.contains("invisivel")){
                 erroInt.classList.add("invisivel")
                 barraPesquisaInt.classList.remove("erro")
             }
         }
         else{
+            acertoInt.classList.add("invisivel")
             erroInt.classList.remove("invisivel")
             barraPesquisaInt.classList.add("erro")
             if(retornoInt == 1){
@@ -40,12 +46,14 @@ barraPesquisaFloat.addEventListener('keydown', (event)=>{
         const nomeVariavelFloat = "dinheiro";
         const retornoFloat = verificarCodigosFloat(valorDigitadoFloat,nomeVariavelFloat)
         if(retornoFloat == 0){
+            acertoFloat.classList.remove("invisivel")
             if(!erroFloat.classList.contains("invisivel")){
                 erroFloat.classList.add("invisivel")
                 barraPesquisaFloat.classList.remove("erro")
             }
         }
         else{
+            acertoFloat.classList.add("invisivel")
             erroFloat.classList.remove("invisivel")
             barraPesquisaFloat.classList.add("erro")
             if(retornoFloat == 1){
@@ -69,12 +77,14 @@ barraPesquisaString.addEventListener('keydown', (event)=>{
         const nomeVariavelString = "nome";
         const retornoStr = verificarCodigosString(valorDigitadoString,nomeVariavelString)
         if(retornoStr == 0){
+            acertoStr.classList.remove("invisivel")
             if(!erroStr.classList.contains("invisivel")){
                 erroStr.classList.add("invisivel")
                 barraPesquisaString.classList.remove("erro")
             }
         }
         else{
+            acertoStr.classList.add("invisivel")
             barraPesquisaString.classList.add("erro")
             erroStr.classList.remove("invisivel")
             if(retornoStr == 1){
@@ -99,12 +109,14 @@ barraPesquisaBool.addEventListener('keydown', (event)=>{
         const valoresPossiveisBool = ["True","False"]
         const retornoBool = verificarCodigosBool(valorDigitadoBool,nomeVariavelBool,valoresPossiveisBool)
         if(retornoBool== 0){
+            acertoBool.classList.remove("invisivel")
             if(!erroBool.classList.contains("invisivel")){
                 erroBool.classList.add("invisivel")
                 barraPesquisaBool.classList.remove("erro")
             }
         }
         else{
+            acertoBool.classList.add("invisivel")
             barraPesquisaBool.classList.add("erro")
             erroBool.classList.remove("invisivel")
             if(retornoBool == 1){
