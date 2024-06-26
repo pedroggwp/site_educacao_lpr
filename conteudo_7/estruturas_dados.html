@@ -1,152 +1,225 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Estrutura de Dados em Python</title>
 
-    <link rel="stylesheet" href="../home/style/header.css">
-    <link rel="stylesheet" href="./estruturas_dados.css">
-    <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png">
+    <link rel="stylesheet" href="../home/style/header.css" />
+    <link rel="stylesheet" href="./estruturas_dados.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png"
+    />
 
     <script src="../home/home.js" defer></script>
     <script src="./estruturas_dados.js" defer></script>
-</head>
-<body>
-
+  </head>
+  <body>
     <header class="menu">
-        <img src="../home/img/logo.svg" alt="Logo do site Laboratório Python">
+      <img src="../home/img/logo.svg" alt="Logo do site Laboratório Python" />
 
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../conteudo_1/variaveis.html">Variáveis</a></li>
-            <li><a href="../conteudo_2/diagrama.html">Diagrama de blocos</a></li>
-            <li><a href="../conteudo_3/input.html">I/O</a></li>
-            <li><a href="../conteudo_4/operadores_aritmeticos.html">Operadores</a></li>
-            <li><a href="../conteudo_5/estruturas_repeticao.html">Estrutura de Repetição</a></li>
-            <li><a href="../conteudo_7/estruturas_dados.html" id="pagina">Estrutura de Dados</a></li>
-        </ul>
-
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../conteudo_1/variaveis.html">Variáveis</a></li>
+        <li><a href="../conteudo_2/diagrama.html">Diagrama de blocos</a></li>
+        <li><a href="../conteudo_3/input.html">I/O</a></li>
+        <li>
+          <a href="../conteudo_4/operadores_aritmeticos.html">Operadores</a>
+        </li>
+        <li>
+          <a href="../conteudo_5/estruturas_repeticao.html"
+            >Estrutura de Repetição</a
+          >
+        </li>
+        <li>
+          <a href="../conteudo_7/estruturas_dados.html" id="pagina"
+            >Estrutura de Dados</a
+          >
+        </li>
+      </ul>
     </header>
 
     <main>
-
-        <div class="card_box">
-            <div class="card_item">
-                <h1>Estruturas de dados</h1>
-                <p>Em Python, existem várias estruturas de dados que podem ser usadas para resolver diferentes tipos de problemas e são úteis em muitas situações. As principais estruturas incluem Listas, Sets, Dicionários e Tuplas. Vamos explorar suas diferenças e principais características.
-                </p>
-            </div>
-
-            <div class="card_item">
-                <h2>Listas</h2>
-                <p>Uma lista é a estrutura de dados mais básica do Python e armazena os dados em sequência, onde cada elemento possui sua posição na lista, denominada de índice. O primeiro elemento é sempre o índice zero e a cada elemento inserido na lista esse valor é incrementado.</p>
-                <p>No Python, uma lista pode armazenar qualquer tipo de dado primitivo (string, inteiro, float, etc). Veja como declaramos uma lista vazia e uma com valores:</p>
-                <div class="code_example">
-                    <code>lista_vazia = []</code>
-                    <code> lista_com_valores = [1, 2, 3]</code>
-                </div>
-            </div>
-
-            <div class="card_item">
-                <h2>Tuplas</h2>
-                <p>Uma tupla é uma estrutura bastante similar a uma lista, com apenas uma diferença: os elementos inseridos em uma tupla não podem ser alterados, diferente de uma lista onde podem ser alterados livremente. Sendo assim, em um primeiro momento, podemos pensar em uma tupla como uma lista que não pode ser alterada.</p>
-                <p>É certo que as tuplas possuem diversas características das listas, porém os usos são distintos. As listas são destinadas a serem sequências homogêneas, enquanto que as Tuplas são estruturas de dados heterogêneas. Veja como declaramos uma tupla abaixo:</p>
-                <div class="code_example">
-                    <code>tupla_inteiros = (1, 2, 3)</code>
-                    <code>tupla_heterogeneos = (1,"Oi",3)</code>
-                </div>
-            </div>
-
-            <div class="card_item">
-                <h2>Dicionários</h2>
-                <p>No Python, os dicionários são coleções de itens desordenados com uma diferença bem grande quando comparados às outras coleções (lists, sets, tuples, etc): um elemento dentro de um dicionário possui uma chave atrelada a ele, uma espécie de identificador. Sendo assim, é muito utilizado quando queremos armazenar dados de forma organizada e que possuem identificação única (como acontece em bancos de dados).</p>
-                <p>Veja como declaramos dicionários abaixo:</p>
-                <div class="code_example">
-                    <code>dicionario_com_inteiros_chave = {1: "Henrique", 2: "Juan"}</code>
-                    <code>dicionario_con_strings_chave = {"nome": "Juan", "sobrenome": "Almeida"}</code>
-                </div>
-            </div>
-            <div class="card_item" id="interativo">
-                <h1>Veja um exemplo prático</h1>
-                <p>Esse será um exemplo prático de inserção em uma lista e como ela se comporta.</p>
-                <div id="interacao">
-                    <p>Adicionar um item na lista</p>
-                </div>
-                <div id="interativoQuadrado"></div>
-            </div>
-            <div id="saiba_mais">
-                <p>Quer saber os métodos mais importantes de uma lista? Clique aqui!</p>
-            </div>
-            <div class="invisivel" id="metodos">
-                <div class="card_item">
-                    <h2>Append</h2>
-                    <p>Adiciona um item ao fim da lista. Sintaxe:</p>
-                    <div class="code_example">
-                        <code>list.append(x)</code>
-                    </div>
-                </div>
-                <div class="card_item">
-                    <h2>Insert</h2>
-                    <p>Insere um item em uma dada posição. O primeiro argumento é o índice do elemento antes do qual será feita a inserção. Veja a sintaxe abaixo:</p>
-                    <div class="code_example">
-                        <code>list.insert(i, x)</code>
-                    </div>
-                </div>
-                <div class="card_item">
-                    <h2>Remove</h2>
-                    <p>Remove o primeiro item encontrado na lista cujo valor é igual a x. Se não existir valor igual, uma exceção ValueError é levantada. Veja a sintaxe abaixo:</p>
-                    <div class="code_example">
-                        <code>list.remove(x)</code>
-                    </div>
-                </div>
-                <div class="card_item">
-                    <h2>Pop</h2>
-                    <p>Remove o item na posição fornecida na lista e retorna. Se nenhum índice for especificado, a.pop() remove e retorna o último item da lista. Levanta um IndexError se a lista estiver vazia ou o índice estiver fora do intervalo da lista. Veja a sintaxe abaixo:</p>
-                    <div class="code_example">
-                        <code>list.pop(i)</code>
-                    </div>
-                </div>
-                <div class="card_item">
-                    <h2>Clear</h2>
-                    <p>Remove todos os itens de uma lista. Veja a sintaxe abaixo:</p>
-                    <div class="code_example">
-                        <code>list.clear()</code>
-                    </div>
-                </div>
-                <div class="card_item">
-                    <h2>Count</h2>
-                    <p>Devolve o número de vezes em que x aparece na lista. Veja a sintaxe abaixo:</p>
-                    <div class="code_example">
-                        <code>list.count(x)</code>
-                    </div>
-                </div>
-                <div class="card_item">
-                    <h2>Sort</h2>
-                    <p> Ordena os itens na lista (os argumentos podem ser usados para personalizar a ordenação, veja a função sorted() para maiores explicações). Veja a sintaxe abaixo</p>
-                    <div class="code_example">
-                        <code>list.sort(*, key=None, reverse=False)</code>
-                    </div>
-                </div>
-                <div class="card_item">
-                    <h2>Reverse</h2>
-                    <p>Inverte a ordem dos elementos na lista. Veja a sintaxe abaixo</p>
-                    <div class="code_example">
-                        <code>list.reverse()</code>
-                    </div>
-                </div>
-
-            </div>
-            
+      <div class="card_box">
+        <div class="card_item">
+          <h1>Estruturas de dados</h1>
+          <p>
+            Em Python, existem várias estruturas de dados que podem ser usadas
+            para resolver diferentes tipos de problemas e são úteis em muitas
+            situações. As principais estruturas incluem Listas, Sets,
+            Dicionários e Tuplas. Vamos explorar suas diferenças e principais
+            características.
+          </p>
         </div>
 
-        <div class="botoes">
-            <a href="../conteudo_5/estruturas_repeticao.html"><div class="btn cancelar">Voltar</div></a>
-            <a href="../agradecimentos/agradecimentos.html"><div class="btn avancar">Avançar</div></a>
+        <div class="card_item">
+          <h2>Listas</h2>
+          <p>
+            Uma lista é a estrutura de dados mais básica do Python e armazena os
+            dados em sequência, onde cada elemento possui sua posição na lista,
+            denominada de índice. O primeiro elemento é sempre o índice zero e a
+            cada elemento inserido na lista esse valor é incrementado.
+          </p>
+          <p>
+            No Python, uma lista pode armazenar qualquer tipo de dado primitivo
+            (string, inteiro, float, etc). Veja como declaramos uma lista vazia
+            e uma com valores:
+          </p>
+          <div class="code_example">
+            <code>lista_vazia = []</code>
+            <code> lista_com_valores = [1, 2, 3]</code>
+          </div>
         </div>
 
+        <div class="card_item">
+          <h2>Tuplas</h2>
+          <p>
+            Uma tupla é uma estrutura bastante similar a uma lista, com apenas
+            uma diferença: os elementos inseridos em uma tupla não podem ser
+            alterados, diferente de uma lista onde podem ser alterados
+            livremente. Sendo assim, em um primeiro momento, podemos pensar em
+            uma tupla como uma lista que não pode ser alterada.
+          </p>
+          <p>
+            É certo que as tuplas possuem diversas características das listas,
+            porém os usos são distintos. As listas são destinadas a serem
+            sequências homogêneas, enquanto que as Tuplas são estruturas de
+            dados heterogêneas. Veja como declaramos uma tupla abaixo:
+          </p>
+          <div class="code_example">
+            <code>tupla_inteiros = (1, 2, 3)</code>
+            <code>tupla_heterogeneos = (1,"Oi",3)</code>
+          </div>
+        </div>
 
+        <div class="card_item">
+          <h2>Dicionários</h2>
+          <p>
+            No Python, os dicionários são coleções de itens desordenados com uma
+            diferença bem grande quando comparados às outras coleções (lists,
+            sets, tuples, etc): um elemento dentro de um dicionário possui uma
+            chave atrelada a ele, uma espécie de identificador. Sendo assim, é
+            muito utilizado quando queremos armazenar dados de forma organizada
+            e que possuem identificação única (como acontece em bancos de
+            dados).
+          </p>
+          <p>Veja como declaramos dicionários abaixo:</p>
+          <div class="code_example">
+            <code
+              >dicionario_com_inteiros_chave = {1: "Henrique", 2: "Juan"}</code
+            >
+            <code
+              >dicionario_con_strings_chave = {"nome": "Juan", "sobrenome":
+              "Almeida"}</code
+            >
+          </div>
+        </div>
+        <div class="card_item" id="interativo">
+          <h1>Veja um exemplo prático</h1>
+          <p>
+            Esse será um exemplo prático de inserção em uma lista e como ela se
+            comporta.
+          </p>
+          <div id="interacao">
+            <p>Adicionar um item na lista</p>
+          </div>
+          <div id="interativoQuadrado"></div>
+        </div>
+        <div id="saiba_mais">
+          <p>
+            Quer saber os métodos mais importantes de uma lista? Clique aqui!
+          </p>
+        </div>
+        <div class="invisivel" id="metodos">
+          <div class="card_item">
+            <h2>Append</h2>
+            <p>Adiciona um item ao fim da lista. Sintaxe:</p>
+            <div class="code_example">
+              <code>list.append(x)</code>
+            </div>
+          </div>
+          <div class="card_item">
+            <h2>Insert</h2>
+            <p>
+              Insere um item em uma dada posição. O primeiro argumento é o
+              índice do elemento antes do qual será feita a inserção. Veja a
+              sintaxe abaixo:
+            </p>
+            <div class="code_example">
+              <code>list.insert(i, x)</code>
+            </div>
+          </div>
+          <div class="card_item">
+            <h2>Remove</h2>
+            <p>
+              Remove o primeiro item encontrado na lista cujo valor é igual a x.
+              Se não existir valor igual, uma exceção ValueError é levantada.
+              Veja a sintaxe abaixo:
+            </p>
+            <div class="code_example">
+              <code>list.remove(x)</code>
+            </div>
+          </div>
+          <div class="card_item">
+            <h2>Pop</h2>
+            <p>
+              Remove o item na posição fornecida na lista e retorna. Se nenhum
+              índice for especificado, a.pop() remove e retorna o último item da
+              lista. Levanta um IndexError se a lista estiver vazia ou o índice
+              estiver fora do intervalo da lista. Veja a sintaxe abaixo:
+            </p>
+            <div class="code_example">
+              <code>list.pop(i)</code>
+            </div>
+          </div>
+          <div class="card_item">
+            <h2>Clear</h2>
+            <p>Remove todos os itens de uma lista. Veja a sintaxe abaixo:</p>
+            <div class="code_example">
+              <code>list.clear()</code>
+            </div>
+          </div>
+          <div class="card_item">
+            <h2>Count</h2>
+            <p>
+              Devolve o número de vezes em que x aparece na lista. Veja a
+              sintaxe abaixo:
+            </p>
+            <div class="code_example">
+              <code>list.count(x)</code>
+            </div>
+          </div>
+          <div class="card_item">
+            <h2>Sort</h2>
+            <p>
+              Ordena os itens na lista (os argumentos podem ser usados para
+              personalizar a ordenação, veja a função sorted() para maiores
+              explicações). Veja a sintaxe abaixo
+            </p>
+            <div class="code_example">
+              <code>list.sort(*, key=None, reverse=False)</code>
+            </div>
+          </div>
+          <div class="card_item">
+            <h2>Reverse</h2>
+            <p>Inverte a ordem dos elementos na lista. Veja a sintaxe abaixo</p>
+            <div class="code_example">
+              <code>list.reverse()</code>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="botoes">
+        <a href="../conteudo_5/estruturas_repeticao.html"
+          ><div class="btn cancelar">Voltar</div></a
+        >
+        <a href="../agradecimentos/agradecimentos.html"
+          ><div class="btn avancar">Avançar</div></a
+        >
+      </div>
     </main>
-    
-</body>
+  </body>
 </html>

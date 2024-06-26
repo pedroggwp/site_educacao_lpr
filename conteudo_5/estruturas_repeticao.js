@@ -1,39 +1,38 @@
-const input = document.getElementById("inputInteracao")
-const contadorTexto = document.getElementById("contador")
+const input = document.getElementById("inputInteracao");
+const contadorTexto = document.getElementById("contador");
 let rodando = false;
 
-input.addEventListener('keydown',(event)=>{
-    if(event.key == "Enter"){
-        if(rodando){
-            window.alert("O quadrado está mudando de cor ainda")
-        }
-        else{
-            executarLoop();
-        }
+input.addEventListener("keydown", (event) => {
+  if (event.key == "Enter") {
+    if (rodando) {
+      window.alert("O quadrado está mudando de cor ainda");
+    } else {
+      executarLoop();
     }
-})
+  }
+});
 
 function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 // Função assíncrona que executa o loop while com pausas
 async function executarLoop() {
-    rodando = true
-    let cont = 0;
-    const valorWhile = input.value
-    while (valorWhile > cont) {
-        let r = Math.floor(Math.random() * 256);
-        let g = Math.floor(Math.random() * 256);
-        let b = Math.floor(Math.random() * 256);
-        contadorTexto.style.backgroundColor = `rgb(${r},${g},${b})`;
-        cont++;            
-        contadorTexto.textContent = "Mudança de cor=" + cont
-        await sleep(1500)
-    }
-    contadorTexto.style.backgroundColor = "#3972A2"
-    contadorTexto.textContent = "Mudança de cor=X"
-    rodando = false
+  rodando = true;
+  let cont = 0;
+  const valorWhile = input.value;
+  while (valorWhile > cont) {
+    let r = Math.floor(Math.random() * 256);
+    let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
+    contadorTexto.style.backgroundColor = `rgb(${r},${g},${b})`;
+    cont++;
+    contadorTexto.textContent = "Mudança de cor=" + cont;
+    await sleep(1500);
+  }
+  contadorTexto.style.backgroundColor = "#3972A2";
+  contadorTexto.textContent = "Mudança de cor=X";
+  rodando = false;
 }
 const btDesafio = document.getElementsByClassName("desafio");
 
@@ -42,11 +41,9 @@ document.querySelector(".desafio").addEventListener("click", () => {
   const perguntas = [
     {
       code: "#Opção1<br>for fruit in fruits:<br>&emsp;&emsp;print(fruit)<br><br>#Opção2<br>for i in range(len(fruits)):<br>&emsp;&emsp;print(fruits[i])<br><br>#Opção3<br>while fruit in fruits:<br>&emsp;&emsp;print(fruit)<br><br>#Opção4<br>while i < len(fruits):<br>&emsp;&emsp;print(fruits[i])<br>&emsp;&emsp;i += 1",
-      pergunta: "Qual das opções representa um loop for que percorre uma lista chamada fruits e imprime cada item da lista?",
-      alternativas: ["1", 
-      "2", 
-      "3", 
-      "4"],
+      pergunta:
+        "Qual das opções representa um loop for que percorre uma lista chamada fruits e imprime cada item da lista?",
+      alternativas: ["1", "2", "3", "4"],
       correta: "1",
     },
     {
@@ -58,14 +55,15 @@ document.querySelector(".desafio").addEventListener("click", () => {
     {
       code: "count = 0 <br>&emsp;&emsp;while count < 3: <br>&emsp;&emsp;print('Hello, world!')<br>&emsp;&emsp;count += 1",
       pergunta: "Qual a saída do código?",
-      alternativas: ["'Hello, world!' é impresso uma vez.", 
-      "'Hello, world!' é impresso três vezes.",
-       "O código gera um erro.", 
-       "'Hello, world!'' é impresso indefinidamente."],
+      alternativas: [
+        "'Hello, world!' é impresso uma vez.",
+        "'Hello, world!' é impresso três vezes.",
+        "O código gera um erro.",
+        "'Hello, world!'' é impresso indefinidamente.",
+      ],
       correta: "'Hello, world!' é impresso três vezes.",
     },
   ];
-
 
   const fundoQuiz = document.getElementById("fundo-quiz");
   const popUpPerguntas = document.getElementById("popup-perguntas");
@@ -73,7 +71,6 @@ document.querySelector(".desafio").addEventListener("click", () => {
   const acertosLabel = document.getElementById("quantidadeAcertos");
   const errosContainer = document.getElementById("erros");
   const nextFechar = document.getElementById("next-fechar");
-
 
   let perguntaAtual = 0;
   let acertos = 0;
@@ -127,7 +124,7 @@ document.querySelector(".desafio").addEventListener("click", () => {
       popUpPerguntas.close();
       popUpRespostas.showModal();
       acertosLabel.innerHTML = acertos + "/" + perguntas.length;
-      
+
       mostrarErros();
       return;
     }
@@ -182,5 +179,3 @@ document.querySelector(".desafio").addEventListener("click", () => {
     popUpRespostas.close();
   });
 });
-
-
