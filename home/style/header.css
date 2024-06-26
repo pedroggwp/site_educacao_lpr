@@ -10,6 +10,7 @@ header {
     justify-content: space-between;
     border-bottom: 5px solid #3972A2;
     margin: 0px 20px 0px 20px;
+    padding: 15px;
 }
 
 header img {
