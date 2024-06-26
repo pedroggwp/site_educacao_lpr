@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="diagrama.css" />
     <link rel="stylesheet" href="../conteudo_4/operadores.css" />
     <link rel="stylesheet" href="../home/style/header.css" />
-    <link rel="stylesheet" href="diagrama.css">
-    <link rel="stylesheet" href="../Modal/modal.css">
+    <link rel="stylesheet" href="diagrama.css" />
 
-    <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png"
+    />
 
     <script src="./diagrama.js" defer></script>
     <script src="../home/header.js" defer></script>
@@ -23,7 +26,9 @@
         <li><a href="../conteudo_1/variaveis.html">Variáveis</a></li>
         <li><a href="diagrama.html" id="atual">Diagrama de blocos</a></li>
         <li><a href="../conteudo_3/input.html">I/O</a></li>
-        <li><a href="../conteudo_4/operadores_aritmeticos.html">Operadores</a></li>
+        <li>
+          <a href="../conteudo_4/operadores_aritmeticos.html">Operadores</a>
+        </li>
         <li>
           <a href="../conteudo_5/estruturas_repeticao.html"
             >Estrutura de Repetição</a
@@ -122,50 +127,6 @@
           </div>
         </div>
 
-        <svg class="seta-direita3" width="100" height="20">
-          <line
-            x1="100"
-            y1="10"
-            x2="0"
-            y2="10"
-            stroke="#ccc"
-            stroke-width="2"
-          />
-          <polygon points="10,5 10,15 0,10" fill="#ccc" />
-        </svg>
-        <svg class="seta-direita4" width="100" height="20">
-          <line
-            x1="100"
-            y1="10"
-            x2="0"
-            y2="10"
-            stroke="#ccc"
-            stroke-width="2"
-          />
-        </svg>
-
-        <svg class="seta-esquerda3" width="100" height="20">
-          <line
-            x1="0"
-            y1="10"
-            x2="100"
-            y2="10"
-            stroke="#ccc"
-            stroke-width="2"
-          />
-          <polygon points="90,5 90,15 100,10" fill="#ccc" />
-        </svg>
-        <svg class="seta-esquerda4" width="100" height="20">
-          <line
-            x1="0"
-            y1="10"
-            x2="100"
-            y2="10"
-            stroke="#ccc"
-            stroke-width="2"
-          />
-        </svg>
-
         <div class="posicaoBloco" id="circulo"></div>
 
         <svg class="seta" width="20" height="60">
@@ -215,12 +176,16 @@
       </div>
     </main>
     <div id="modal">
-      <dialog id="modal_erro">
-          <h1 class="modal-titulo">ERRO!</h1>
-          <img src="img/erro_img.webp" alt="imagem de erro" class="modal-img">
-          <p class="modal-conteudo">Bloco na posição incorreta! Tente novamente.</p>
-          <input type="button" value="Continuar" class="bt_continuar" id="continuar_erro">
+      <dialog id="modal_certo">
+        <h1 class="modal-titulo">PARABÉNS!</h1>
+        <img
+          src="img/certo_img.png"
+          alt="imagem de sucesso"
+          class="modal-img"
+        />
+        <p class="modal-conteudo">Parabéns, você conseguiu o desafio!</p>
+        <input type="button" value="Continuar" class="bt_continuar" />
       </dialog>
-  </div>
+    </div>
   </body>
 </html>

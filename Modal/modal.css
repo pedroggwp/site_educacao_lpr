@@ -7,6 +7,24 @@
   height: 100%;
 }
 
+#modal_certo {
+  position: fixed;
+  display: grid;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  max-width: 50vh;
+  height: 50vh;
+  border: 5px solid #3972a2;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#modal_certo::backdrop {
+  background-color: #1e1e1e5e;
+}
+
 #modal_erro {
   position: fixed;
   display: grid;
@@ -30,6 +48,7 @@
   justify-content: center;
   text-align: center;
   margin-top: 50px;
+  color: white;
 }
 
 .modal-conteudo {
