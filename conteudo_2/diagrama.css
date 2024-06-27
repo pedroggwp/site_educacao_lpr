@@ -292,7 +292,7 @@ span {
   height: 60px;
 }
 
-.bt_continuar {
+#bt_continuar {
   display: block;
   background-color: #3972a2;
   color: white;

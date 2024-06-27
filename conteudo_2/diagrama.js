@@ -1,7 +1,8 @@
 const blocos = document.getElementsByClassName("bloco");
 const posicoes = document.getElementsByClassName("posicaoBloco");
 const modalCerto = document.getElementById("modal_certo");
-const btContinuar = document.querySelectorAll(".bt_continuar");
+const btContinuar = document.getElementById("bt_continuar");
+
 const body = document.getElementsByTagName("body")[0];
 
 let blocoAtual = null;
@@ -92,12 +93,12 @@ for (let i = 0; i < posicoes.length; i++) {
 }
 
 // Evento para fechar o modal
-for (let i = 0; i < btContinuar.length; i++) {
-    btContinuar[i].addEventListener("click", fecharModal);
-}
+
 
 function fecharModal() {
     console.log("fecharModal")
     modalCerto.close();
     body.style.overflow = "auto";
 }
+
+btContinuar.addEventListener("click", fecharModal);
